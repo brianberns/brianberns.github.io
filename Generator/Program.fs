@@ -12,7 +12,7 @@ module Program =
             .Factory
             .CreateWeb(argv)
             .ConfigureEngine(fun eng ->
-                eng.FileSystem.OutputPath <- NormalizedPath("..\docs"))
+                eng.FileSystem.OutputPath <- NormalizedPath("..\docs"))   // Github pages requires this hardcoded name
             .RunAsync()
             |> Async.AwaitTask
             |> Async.RunSynchronously
