@@ -1,6 +1,7 @@
 ﻿namespace Blog
 
 open Statiq.App
+open Statiq.Common
 open Statiq.Web
 
 module Program =
@@ -10,6 +11,8 @@ module Program =
         Bootstrapper
             .Factory
             .CreateWeb(argv)
+            .ConfigureEngine(fun eng ->
+                eng.FileSystem.OutputPath <- NormalizedPath("docs"))
             .RunAsync()
             |> Async.AwaitTask
             |> Async.RunSynchronously
