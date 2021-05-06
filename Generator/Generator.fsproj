@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="scripts\sine.ts" />
+    <Content Include="tsconfig.json" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
