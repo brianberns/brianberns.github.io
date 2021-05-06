@@ -83,11 +83,15 @@
 function init() {
     let canvas = document.getElementById("canvas") as HTMLCanvasElement;
     let graph = new Graph(canvas);
-    graph.setStart(-10, -1.5);
-    graph.setEnd(10, 1.5);
+    let xStart = -10;
+    let yMax = 1.5
+    graph.setStart(xStart, -yMax);
+    graph.setEnd(-xStart, yMax);
     function draw() {
+        graph.setStart(xStart, -1.5);
         graph.drawFunction(Math.sin);
-        // window.requestAnimationFrame(draw);
+        xStart += 0.1;
+        window.requestAnimationFrame(draw);
     }
     window.requestAnimationFrame(draw);
 }
