@@ -1,4 +1,6 @@
-﻿class Graph {
+﻿type GraphableFunction = (x: number) => number;
+
+class Graph {
 
     constructor(canvas: HTMLCanvasElement) {
         this.ctx = canvas.getContext("2d");
@@ -50,33 +52,62 @@
     private drawAxes() {
         this.ctx.strokeStyle = "gray";
         this.ctx.beginPath();
-        let [xPos, yPos] = this.getPosition(0, 0);
+        const tickLen = 3;
 
             // x-axis
+        let yPos = this.ctx.canvas.height / 2;
         this.ctx.moveTo(0, yPos);
         this.ctx.lineTo(this.ctx.canvas.width, yPos);
 
+            // x-axis ticks
+        let [xMinCoord,] = this.getCoord(0, yPos);
+        let [xMaxCoord,] = this.getCoord(this.ctx.canvas.width, yPos);
+        for (let xCoord = Math.ceil(xMinCoord); xCoord <= Math.floor(xMaxCoord); ++xCoord) {
+            let [xPos,] = this.getPosition(xCoord, 0);
+            this.ctx.moveTo(xPos, yPos - tickLen);
+            this.ctx.lineTo(xPos, yPos + tickLen);
+        }
+
             // y-axis
+        let xPos = this.ctx.canvas.width / 2;
         this.ctx.moveTo(xPos, 0);
         this.ctx.lineTo(xPos, this.ctx.canvas.height);
+
+            // y-axis ticks
+        let [, yMinCoord] = this.getCoord(xPos, this.ctx.canvas.height);
+        let [, yMaxCoord] = this.getCoord(xPos, 0);
+        for (let yCoord = Math.ceil(yMinCoord); yCoord <= Math.floor(yMaxCoord); ++yCoord) {
+            let [,yPos] = this.getPosition(0, yCoord);
+            this.ctx.moveTo(xPos - tickLen, yPos);
+            this.ctx.lineTo(xPos + tickLen, yPos);
+        }
 
         this.ctx.stroke();
     }
 
-    public drawFunction(fun: (x: number) => number) {
+    private strokeStyles = ["red", "blue"];
+
+    public drawFunctions(funs: Array<GraphableFunction>) {
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
         this.drawAxes();
 
-        this.ctx.beginPath();
-        this.ctx.strokeStyle = "red";
-        for (let xPos = 0; xPos < this.ctx.canvas.width; xPos++) {
-            let [xCoord,] = this.getCoord(xPos, 0);
-            let yCoord = fun(xCoord);
-            let [, yPos] = this.getPosition(0, yCoord);
-            if (xPos == 0) this.ctx.moveTo(xPos, yPos)
-            else this.ctx.lineTo(xPos, yPos);
+        for (let iFun = 0; iFun < funs.length; ++iFun) {
+            let fun = funs[iFun];
+            this.ctx.beginPath();
+            this.ctx.strokeStyle = this.strokeStyles[iFun % this.strokeStyles.length];
+            for (let xPos = 0; xPos < this.ctx.canvas.width; xPos++) {
+                let [xCoord,] = this.getCoord(xPos, 0);
+                let yCoord = fun(xCoord);
+                let [, yPos] = this.getPosition(0, yCoord);
+                if (xPos == 0) this.ctx.moveTo(xPos, yPos)
+                else this.ctx.lineTo(xPos, yPos);
+            }
+            this.ctx.stroke();
         }
-        this.ctx.stroke();
+    }
+
+    public drawFunction(fun: GraphableFunction) {
+        this.drawFunctions([fun]);
     }
 }
 
@@ -88,9 +119,9 @@ function init() {
     graph.setStart(xStart, -yMax);
     graph.setEnd(-xStart, yMax);
     function draw() {
-        graph.setStart(xStart, -1.5);
-        graph.drawFunction(Math.sin);
-        xStart += 0.1;
+        graph.setStart(xStart, -yMax);
+        graph.drawFunctions([Math.sin, Math.cos]);
+        xStart += 0.05;
         window.requestAnimationFrame(draw);
     }
     window.requestAnimationFrame(draw);
