@@ -39,16 +39,6 @@ class Graph {
         return [xCoord, yCoord];
     }
 
-    private moveToCoord(xCoord: number, yCoord: number) {
-        let [xPos, yPos] = this.getPosition(xCoord, yCoord);
-        this.ctx.moveTo(xPos, yPos);
-    }
-
-    private lineToCoord(xCoord: number, yCoord: number) {
-        let [xPos, yPos] = this.getPosition(xCoord, yCoord);
-        this.ctx.lineTo(xPos, yPos);
-    }
-
     private drawAxes() {
         this.ctx.strokeStyle = "gray";
         this.ctx.beginPath();
@@ -87,14 +77,20 @@ class Graph {
 
     private strokeStyles = ["red", "blue"];
 
-    public drawFunctions(funs: Array<GraphableFunction>) {
+    public drawFunctions(funs: GraphableFunction[]) {
+
+            // draw axes
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
         this.drawAxes();
 
+            // draw each function
         for (let iFun = 0; iFun < funs.length; ++iFun) {
+
             let fun = funs[iFun];
             this.ctx.beginPath();
             this.ctx.strokeStyle = this.strokeStyles[iFun % this.strokeStyles.length];
+
+                // draw the function
             for (let xPos = 0; xPos < this.ctx.canvas.width; xPos++) {
                 let [xCoord,] = this.getCoord(xPos, 0);
                 let yCoord = fun(xCoord);
@@ -102,6 +98,7 @@ class Graph {
                 if (xPos == 0) this.ctx.moveTo(xPos, yPos)
                 else this.ctx.lineTo(xPos, yPos);
             }
+
             this.ctx.stroke();
         }
     }

@@ -29,14 +29,6 @@ var Graph = /** @class */ (function () {
         var yCoord = ((this.ctx.canvas.height - yPos) / this.yZoom) + this.yStart;
         return [xCoord, yCoord];
     };
-    Graph.prototype.moveToCoord = function (xCoord, yCoord) {
-        var _a = this.getPosition(xCoord, yCoord), xPos = _a[0], yPos = _a[1];
-        this.ctx.moveTo(xPos, yPos);
-    };
-    Graph.prototype.lineToCoord = function (xCoord, yCoord) {
-        var _a = this.getPosition(xCoord, yCoord), xPos = _a[0], yPos = _a[1];
-        this.ctx.lineTo(xPos, yPos);
-    };
     Graph.prototype.drawAxes = function () {
         this.ctx.strokeStyle = "gray";
         this.ctx.beginPath();
@@ -68,12 +60,15 @@ var Graph = /** @class */ (function () {
         this.ctx.stroke();
     };
     Graph.prototype.drawFunctions = function (funs) {
+        // draw axes
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
         this.drawAxes();
+        // draw each function
         for (var iFun = 0; iFun < funs.length; ++iFun) {
             var fun = funs[iFun];
             this.ctx.beginPath();
             this.ctx.strokeStyle = this.strokeStyles[iFun % this.strokeStyles.length];
+            // draw the function
             for (var xPos = 0; xPos < this.ctx.canvas.width; xPos++) {
                 var xCoord = this.getCoord(xPos, 0)[0];
                 var yCoord = fun(xCoord);
