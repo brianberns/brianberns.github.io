@@ -1,4 +1,4 @@
-# Intervals
+# Music theory: Intervals
 
 *June 2021*
 
@@ -32,6 +32,6 @@ Previous: [Sine waves](SineWaves.html)
 
 [^1]: I haven't listed any ratios greater than 2:1 here, because they can always be reduced. For example 5:2 (perfect twelfth) is 1:1 (octave) plus 3:2 (perfect fifth).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI0NDYwOTc0LDc3Nzc2NzE1NSwxOTg1OD
-cyNjQyXX0=
+eyJoaXN0b3J5IjpbLTEzMTY2ODk3NTIsNzc3NzY3MTU1LDE5OD
+U4NzI2NDJdfQ==
 -->
