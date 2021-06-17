@@ -1,4 +1,4 @@
-# Music theory and sine waves
+# Music theory: Sine waves
 
 *June 2021*
 
@@ -21,5 +21,6 @@ Next: [Intervals](Intervals.html)
 
 [^1]: The use of "simplest" here actually continues to beg the question, though. Why isn't a square wave considered simpler? Maybe someone else can provide a better explanation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDYyMjcyLC0yMDMyOTMyMDhdfQ==
+eyJoaXN0b3J5IjpbLTEyNjUyNjA2MSwtNjUwNjIyNzIsLTIwMz
+I5MzIwOF19
 -->
