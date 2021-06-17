@@ -1,3 +1,5 @@
+# Music theory and sine waves
+
 ## Introduction
 
 I have a decent understanding of physics and a love of music, but music theory has always mystified me. In this series, I'd like to document my notes on the topic as I try to learn it from scratch. I'm sure this will be far from comprehensive or rigorous, so I welcome suggestions and corrections.
