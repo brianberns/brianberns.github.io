@@ -17,7 +17,7 @@ osc.connect(ctx.destination);
 
 function play() {
 	osc.start();
-	osc.stop(ctx.currentTime + 1.0);
+	osc.stop(ctx.currentTime + 0.5);
 }
 </script>
 
@@ -34,6 +34,6 @@ Next: [Intervals](Intervals.html)
 
 [^1]: The use of "simplest" here actually continues to beg the question, though. Why isn't a square wave considered simpler? Maybe someone else can provide a better explanation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTIzOTg5OTUsLTIxMTAwOTkzODcsLT
+eyJoaXN0b3J5IjpbLTE2OTgwMzg2MTUsLTIxMTAwOTkzODcsLT
 Y1MDYyMjcyLC0yMDMyOTMyMDhdfQ==
 -->
