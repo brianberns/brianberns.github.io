@@ -17,6 +17,7 @@
     <PackageReference Include="DotLiquid" Version="2.1.457" />
     <PackageReference Include="Markdig" Version="0.25.0" />
     <PackageReference Include="Suave" Version="2.6.1" />
+    <PackageReference Include="YamlDotNet" Version="11.2.0" />
   </ItemGroup>
 
 </Project>

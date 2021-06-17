@@ -33,7 +33,3 @@ Yes, we can use a Fourier transform to represent any sound as the sum of sine wa
 Next: [Intervals](Intervals.html)
 
 [^1]: The use of "simplest" here actually continues to beg the question, though. Why isn't a square wave considered simpler? Maybe someone else can provide a better explanation.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzE1Mjg0MTgsLTE2OTgwMzg2MTUsLT
-IxMTAwOTkzODcsLTY1MDYyMjcyLC0yMDMyOTMyMDhdfQ==
--->
