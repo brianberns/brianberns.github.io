@@ -1,6 +1,6 @@
 # Music theory and sine waves
 
-June 2021
+*June 2021*
 
 ## Introduction
 
