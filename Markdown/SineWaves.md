@@ -4,7 +4,7 @@
 
 ## Introduction
 
-I have a decent understanding of physics and a love of music, but music theory has always mystified me. In this series, I'd like to document my notes on the topic as I try to learn it from scratch. I'm sure this will be far from comprehensive or rigorous, so I welcome suggestions and corrections.
+I have a decent understanding of physics and a love of music, but music theory has always mystified me. In this series, I'd like to document my notes on the topic as I try to learn it from scratch. I'm sure this will be far from comprehensive or rigorous, so I welcome [suggestions and corrections](https://github.com/brianberns/brianberns.github.io/issues).
 
 ## Sine waves
 
@@ -21,6 +21,6 @@ Next: [Intervals](Intervals.html)
 
 [^1]: The use of "simplest" here actually continues to beg the question, though. Why isn't a square wave considered simpler? Maybe someone else can provide a better explanation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjUyNjA2MSwtNjUwNjIyNzIsLTIwMz
-I5MzIwOF19
+eyJoaXN0b3J5IjpbLTIxMTAwOTkzODcsLTY1MDYyMjcyLC0yMD
+MyOTMyMDhdfQ==
 -->
