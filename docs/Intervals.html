@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="Blog.css" />
+</head>
+<body>
+<p>June 2021</p>
+<p>Now that we've decided to represent basic musical sounds as <a href="SineWaves.html">pure sine waves</a>, we can talk about the intervals between two such sounds. Let's just call these basic sounds &quot;notes&quot; for simplicity.</p>
+<h2 id="unison">Unison</h2>
+<p>The simplest interval is formed by two notes that have the same frequency, although perhaps not the same phase or amplitude. When we add two sine waves together in this way, we are guaranteed to get <a href="https://www.desmos.com/calculator/unwtutu7bl">another sine wave of the same frequency</a>. So, in a sense, unison is still just a single note.</p>
+<p>If the two notes are in phase, we get a louder note, and if they are out of phase, they cancel each other out and we get a quieter note. (This is the basis for noise-canceling headphones.)</p>
+<h2 id="octave">Octave</h2>
+<p>If one note is vibrating twice as fast as the other (i.e. their  frequencies are in a 2:1 ratio) we have an octave. Such notes sound so similar to humans, that they seem to &quot;rhyme&quot; in a way.</p>
+<p>The wave form of an octave has alternating tall and short peaks, but <a href="https://www.desmos.com/calculator/7idxde6tyo">the exact shape of depends on the phase relationship of the two notes</a>. Interestingly, all these different wave forms sound the same to humans, because our ears are <a href="https://ptolemy.berkeley.edu/eecs20/week8/phase.html">insensitive to phase differences</a>. (Presumably because we are performing a Fourier transform and discarding the phase information.)</p>
+<h2 id="consonance">Consonance</h2>
+<p>In general, intervals with simple frequency ratios tend to sound pleasant, or &quot;consonant&quot;, regardless of the phase relationship of the two notes. Presumably, this is because simple ratios avoid the <a href="https://www.phys.uconn.edu/%7Egibson/Notes/Section5_5/Sec5_5.htm">unpleasant &quot;beating&quot; effect</a> that occurs when the ratio isn't as simple (e.g. 11:10).</p>
+<h2 id="other-simple-intervals">Other simple intervals</h2>
+<p>The next simplest ratio after 2:1 is 3:2, which is called a &quot;perfect fifth&quot;. Other simple intervals include:<a id="fnref:1" href="#fn:1" class="footnote-ref"><sup>1</sup></a></p>
+<ul>
+<li>4:3 - Perfect fourth</li>
+<li>5:3 - Major sixth</li>
+<li>5:4 - Major third</li>
+<li>6:5 - Minor third</li>
+<li>etc.</li>
+</ul>
+<p>Clearly, we need a way to organize all these intervals (and explain their confusing names). That will be our next topic.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn:1">
+<p>I haven't listed any ratios greater than 2:1 here, because they can always be reduced. For example 5:2 (perfect twelfth) is 1:1 (octave) plus 3:2 (perfect fifth).<a href="#fnref:1" class="footnote-back-ref">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+</body>
+</html>
