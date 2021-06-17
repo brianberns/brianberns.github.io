@@ -27,4 +27,9 @@ The next simplest ratio after 2:1 is 3:2, which is called a "perfect fifth". Oth
 
 Clearly, we need a way to organize all these intervals (and explain their confusing names). That will be our next topic.
 
+Previous: [Sine waves](SineWaves.html)
+
 [^1]: I haven't listed any ratios greater than 2:1 here, because they can always be reduced. For example 5:2 (perfect twelfth) is 1:1 (octave) plus 3:2 (perfect fifth).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk4NTg3MjY0Ml19
+-->
