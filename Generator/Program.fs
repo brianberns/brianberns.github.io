@@ -1,4 +1,6 @@
-﻿open System.IO
+﻿open System
+open System.IO
+
 open Markdig
 open DotLiquid
 open Suave
@@ -16,6 +18,7 @@ let template =
 
 let pipeline =
     MarkdownPipelineBuilder()
+        .ConfigureNewLine(Environment.NewLine)
         .UseAdvancedExtensions()
         .Build()
 
