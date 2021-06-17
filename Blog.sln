@@ -3,11 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Generator", "Generator\Generator.fsproj", "{56BD950C-D2E9-44DC-AB16-9DA807202A3E}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Generator", "Generator\Generator.fsproj", "{56BD950C-D2E9-44DC-AB16-9DA807202A3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA640977-510A-49AD-BE5F-7CAB0CB2FE75}"
 	ProjectSection(SolutionItems) = preProject
 		Markdown\Index.md = Markdown\Index.md
+		Markdown\SineWaves.md = Markdown\SineWaves.md
 	EndProjectSection
 EndProject
 Global
