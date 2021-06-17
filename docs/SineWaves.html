@@ -24,7 +24,7 @@ function play() {
 	osc.stop(ctx.currentTime + 0.5);
 }
 </script>
-<p>Why are sine waves used to describe basic musical sounds? This might seem obvious, but it isn't, and the question is often glossed over. The sound of a plucked string, for example, is <strong>not</strong> a pure sine wave. Pure sine waves actually sound <a href="https://szynalski.com/tone#A4,v0.06">harsh</a>. <button onclick="play()">▶</button></p>
+<p>Why are sine waves used to describe basic musical sounds? This might seem obvious, but it isn't, and the question is often glossed over. The sound of a plucked string, for example, is <strong>not</strong> a pure sine wave. Pure sine waves actually sound <a href="https://szynalski.com/tone#A4,v0.06">harsh</a>. <button title="Play pure sine wave" onclick="play()">▶</button></p>
 <p>Yes, we can use a Fourier transform to represent any sound as the sum of sine waves, but that begs the question. Why not use some other waveform as the basis for music theory? I think there are two main reasons:</p>
 <ul>
 <li><p>Sine waves describe simple harmonic motion, in which a restoring force is proportional to displacement (<a href="https://www.compadre.org/osp/EJSS/4464/250.htm">Hooke's law</a>). This is the simplest of all vibrating systems, and can be used to model the vibrations of musical instruments.<a id="fnref:1" href="#fn:1" class="footnote-ref"><sup>1</sup></a></p>
@@ -40,8 +40,8 @@ function play() {
 <li id="fn:1">
 <p>The use of &quot;simplest&quot; here actually continues to beg the question, though. Why isn't a square wave considered simpler? Maybe someone else can provide a better explanation.</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTgwMzg2MTUsLTIxMTAwOTkzODcsLT
-Y1MDYyMjcyLC0yMDMyOTMyMDhdfQ==
+eyJoaXN0b3J5IjpbLTE2MzE1Mjg0MTgsLTE2OTgwMzg2MTUsLT
+IxMTAwOTkzODcsLTY1MDYyMjcyLC0yMDMyOTMyMDhdfQ==
 -->
 <p><a href="#fnref:1" class="footnote-back-ref">&#8617;</a></p>
 </li>
