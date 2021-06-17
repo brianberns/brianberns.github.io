@@ -1,4 +1,7 @@
-# Notes on music theory
+# Blog index
 
-* [Sine waves](SineWaves.html)
-* [Intervals](Intervals.html)
+## Notes on music theory
+
+* June 2021
+  * [Sine waves](SineWaves.html)
+  * [Intervals](Intervals.html)
