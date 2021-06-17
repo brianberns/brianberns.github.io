@@ -1,3 +1,6 @@
+---
+title: Music theory - Sine waves
+---
 # Music theory: Sine waves
 
 *June 2021*
