@@ -39,7 +39,10 @@ let onFileEvent (args : FileSystemEventArgs) =
                 $"{Path.GetFileNameWithoutExtension(mdFile.Name)}.html"
             let htmlFilePath =
                 Path.Combine(htmlDirPath, htmlFileName)
-            new StreamWriter(htmlFilePath)
+            new StreamWriter(
+                htmlFilePath,
+                append = false,
+                encoding = Text.Encoding.UTF8)
         wtr.Write(html)
 
 [<EntryPoint>]
