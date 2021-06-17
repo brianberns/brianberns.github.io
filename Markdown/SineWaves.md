@@ -16,9 +16,10 @@ Yes, we can use a Fourier transform to represent any sound as the sum of sine wa
 
 * Adding two sine waves of the same frequency, but with any phase and magnitude, produces [another sine wave of the same frequency](https://demonstrations.wolfram.com/SumOfSines/). This [unique property](https://en.wikipedia.org/wiki/Sine_wave) is what makes sine waves a good basis for Fourier analysis.
 
-*Next*: [Intervals](Intervals.html)
+---
+Next: [Intervals](Intervals.html)
 
 [^1]: The use of "simplest" here actually continues to beg the question, though. Why isn't a square wave considered simpler? Maybe someone else can provide a better explanation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzI5MzIwOF19
+eyJoaXN0b3J5IjpbLTk1NjcxNTQ3LC0yMDMyOTMyMDhdfQ==
 -->
