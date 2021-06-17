@@ -25,7 +25,8 @@ let pipeline =
 let onFileEvent (args : FileSystemEventArgs) =
 
     for htmlFile in DirectoryInfo(htmlDirPath).EnumerateFiles("*.html") do
-        htmlFile.Delete()
+        if not htmlFile.IsReadOnly then
+            htmlFile.Delete()
 
     for mdFile in DirectoryInfo(markdownDirPath).EnumerateFiles("*.md") do
         let md = readFile mdFile.FullName
