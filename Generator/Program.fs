@@ -27,9 +27,11 @@ let markdownDirPath = @"..\..\..\..\Markdown"
 let htmlDirPath = @"..\..\..\..\docs"
 
 /// Reads contents of the given file.
+// https://stackoverflow.com/questions/9759697/reading-a-file-used-by-another-process
 let readFile path =
-    use rdr = new StreamReader(path : string)
-    rdr.ReadToEnd()
+    use stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite)
+    use reader = new StreamReader(stream)
+    reader.ReadToEnd()
 
 /// Liquid HTML template.
 let template =
