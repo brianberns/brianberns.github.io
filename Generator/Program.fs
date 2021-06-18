@@ -13,23 +13,30 @@ open DotLiquid
 
 open Suave
 
+/// YAML front matter.
 [<CLIMutable>]
 type FrontMatter =
     {
         Title : string
     }
 
+/// Path to directory containing source markdown files.
 let markdownDirPath = @"..\..\..\..\Markdown"
+
+/// Path to directory containing generated HTML files.
 let htmlDirPath = @"..\..\..\..\docs"
 
+/// Reads contents of the given file.
 let readFile path =
     use rdr = new StreamReader(path : string)
     rdr.ReadToEnd()
 
+/// Liquid HTML template.
 let template =
     readFile "Template.liquid"
         |> Template.Parse
 
+/// Markdown pipeline.
 let pipeline =
     MarkdownPipelineBuilder()
         .ConfigureNewLine(Environment.NewLine)
@@ -37,11 +44,13 @@ let pipeline =
         .UseYamlFrontMatter()
         .Build()
 
+/// YAML deserializer.
 let yamlDeserializer =
     DeserializerBuilder()
         .WithNamingConvention(CamelCaseNamingConvention.Instance)
         .Build()
 
+/// Responds to a file system event.
 let onFileEvent (_ : FileSystemEventArgs) =
 
         // delete all existing generated files
@@ -98,6 +107,7 @@ let onFileEvent (_ : FileSystemEventArgs) =
 [<EntryPoint>]
 let main argv =
 
+        // initialize file system watcher
     use watcher =
         new FileSystemWatcher(
             Path = markdownDirPath,
@@ -108,6 +118,7 @@ let main argv =
     watcher.Renamed.Add(onFileEvent)
     watcher.Deleted.Add(onFileEvent)
 
+        // start web server
     let config =
         DirectoryInfo(htmlDirPath)
             .FullName
