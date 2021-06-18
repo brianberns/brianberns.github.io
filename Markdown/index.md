@@ -1,3 +1,6 @@
+---
+title: Blog index
+---
 # Blog index
 
 ## Notes on music theory
