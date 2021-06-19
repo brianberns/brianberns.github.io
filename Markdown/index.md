@@ -8,3 +8,4 @@ title: Blog index
 * June 2021
   * [Sine waves](SineWaves.html)
   * [Intervals](Intervals.html)
+  * [Scales](Scales.html)
