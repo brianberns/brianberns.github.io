@@ -29,7 +29,7 @@ We can also find notes in the other direction, moving down by fifths instead of 
 | A |  1 | (3&frasl;2)<sup>1</sup> = 3&frasl;2   | 3&frasl;2   |
 | E |  2 | (3&frasl;2)<sup>2</sup> = 9&frasl;4   | 9&frasl;8   |
 
-We've also given each note a name (which seems arbitrary for now, but will be explained later). Let's put these normalized notes in order from lowest to highest within the octave:
+We've also given the notes names (which seem arbitrary, but will be explained later). Let's put these normalized notes in order from lowest to highest within the octave:
 
 | Name | Normalized ratio |
 | - | ----------- |
@@ -39,4 +39,4 @@ We've also given each note a name (which seems arbitrary for now, but will be ex
 | A | 3&frasl;2 = 1.50 |
 | C | 16&frasl;9 = 1.78 |
 
-This series of notes (D, E, G, A, and C) is called the [pentatonic scale](https://www.phys.uconn.edu/~gibson/Notes/Section3_4/Sec3_4.htm) (where "pentatonic" just means a scale containing five notes).
+This series of notes (D, E, G, A, and C) in an octave is called the [pentatonic scale](https://www.phys.uconn.edu/~gibson/Notes/Section3_4/Sec3_4.htm) (where "pentatonic" just means a scale containing five notes).

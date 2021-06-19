@@ -41,9 +41,10 @@ let template =
 /// Markdown pipeline.
 let pipeline =
     MarkdownPipelineBuilder()
-        .ConfigureNewLine(Environment.NewLine)
-        .UseAdvancedExtensions()
         .UseYamlFrontMatter()
+        .UseAdvancedExtensions()
+        .UseSmartyPants()
+        .ConfigureNewLine(Environment.NewLine)
         .Build()
 
 /// YAML deserializer.
