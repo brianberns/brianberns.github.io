@@ -55,6 +55,6 @@ We've also computed the ratio of each note relative to the previous note in the 
 | 9&frasl;8 = 1.13 | Whole step |
 | 256&frasl;243 = 1.05 | Half step |
 
-As a result, the notes in the scale are distributed somewhat evenly throughout the octave, which seems desirable. The pattern of whole (`W`) and half (`H`) steps is `W H W W W H W`, but since the scale repeats at every octave, so does the pattern: `W H W W W H W W H W W W H W W H W W W H W ...`. Any scale that follows a similar pattern of half steps separated by two or three whole steps is called a [diatonic scale](https://www.phys.uconn.edu/~gibson/Notes/Section3_4/Sec3_4.htm).
+As a result, the notes in the scale are distributed somewhat evenly throughout the octave, which seems desirable. The pattern of whole (`W`) and half (`h`) steps is `W h W W W h W`, but since the scale repeats at every octave, so does the pattern: `W h W W W h W W h W W W h W W h W W W h W` ... . Any scale that follows a similar pattern of half steps separated by two or three whole steps is called a [diatonic scale](https://www.phys.uconn.edu/~gibson/Notes/Section3_4/Sec3_4.htm), such as the white keys on a piano.
 
 [^1]: Is it luck? There doesn't seem to be anything in the process that guarantees such an outcome mathematically, but I could be wrong. It just seems to work out nicely.
