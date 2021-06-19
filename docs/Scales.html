@@ -11,11 +11,11 @@
 <p><em>June 2021</em></p>
 <p>To define a scale, we would like to pick a set of notes within an octave so that the intervals between the notes are consonant.</p>
 <h2 id="pythagorean-scale">Pythagorean scale</h2>
-<p>One way to accomplish this is based on perfect fifths. We can pick an arbitrary frequency as a starting point (the &quot;tonic&quot;), and then go up in pitch repeatedly by fifths. The first few notes of the scale have the following frequency ratios relative to the tonic:</p>
+<p>We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the &quot;tonic&quot;), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: right;"># of fifths from tonic</th>
+<th style="text-align: right;"># of fifths</th>
 <th>Frequency ratio</th>
 </tr>
 </thead>
@@ -39,39 +39,77 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: right;"># of fifths from tonic</th>
+<th>Name</th>
+<th style="text-align: right;"># of fifths</th>
 <th>Unnormalized ratio</th>
-<th>Normalized ratio (between 1 and 2)</th>
+<th>Normalized ratio</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>C</td>
 <td style="text-align: right;">-2</td>
 <td>(3⁄2)<sup>-2</sup> = 4⁄9</td>
 <td>16⁄9</td>
 </tr>
 <tr>
+<td>G</td>
 <td style="text-align: right;">-1</td>
 <td>(3⁄2)<sup>-1</sup> = 2⁄3</td>
 <td>4⁄3</td>
 </tr>
 <tr>
+<td>D</td>
 <td style="text-align: right;">0</td>
 <td>(3⁄2)<sup>0</sup> = 1</td>
 <td>1</td>
 </tr>
 <tr>
+<td>A</td>
 <td style="text-align: right;">1</td>
 <td>(3⁄2)<sup>1</sup> = 3⁄2</td>
 <td>3⁄2</td>
 </tr>
 <tr>
+<td>E</td>
 <td style="text-align: right;">2</td>
 <td>(3⁄2)<sup>2</sup> = 9⁄4</td>
 <td>9⁄8</td>
 </tr>
 </tbody>
 </table>
+<p>We've also given each note a name (which seems arbitrary for now, but will be explained later). Let's put these normalized notes in order from lowest to highest within the octave:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Normalized ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>1 = 1.00</td>
+</tr>
+<tr>
+<td>E</td>
+<td>9⁄8 = 1.13</td>
+</tr>
+<tr>
+<td>G</td>
+<td>4⁄3 = 1.33</td>
+</tr>
+<tr>
+<td>A</td>
+<td>3⁄2 = 1.50</td>
+</tr>
+<tr>
+<td>C</td>
+<td>16⁄9 = 1.78</td>
+</tr>
+</tbody>
+</table>
+<p>This series of notes (D, E, G, A, and C) is called the <a href="https://www.phys.uconn.edu/%7Egibson/Notes/Section3_4/Sec3_4.htm">pentatonic scale</a> (where &quot;pentatonic&quot; just means a scale containing five notes).</p>
 
 </body>
 </html>
