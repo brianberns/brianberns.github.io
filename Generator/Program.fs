@@ -12,6 +12,7 @@ open YamlDotNet.Serialization.NamingConventions
 open DotLiquid
 
 open Suave
+open Suave.Operators
 
 /// YAML front matter.
 [<CLIMutable>]
@@ -127,6 +128,13 @@ let main argv =
             .FullName
             |> Some
             |> defaultConfig.withHomeFolder
-    startWebServer config Files.browseHome
+    let app =
+        Filters.GET >=> 
+            choose [
+                Filters.path "/" >=> Files.browseFileHome "index.html"
+                Files.browseHome
+                RequestErrors.NOT_FOUND "Page not found."
+            ]
+    startWebServer config app
 
     0
