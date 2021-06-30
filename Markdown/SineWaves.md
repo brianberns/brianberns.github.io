@@ -13,12 +13,12 @@ I have a decent understanding of physics and a love of music, but music theory h
 
 <script>
 var ctx = new AudioContext();
-var osc = ctx.createOscillator();
-osc.type = "sine";
-osc.frequency.value = 440;
-osc.connect(ctx.destination);
 
 function play() {
+	var osc = ctx.createOscillator();
+	osc.type = "sine";
+	osc.frequency.value = 440;
+	osc.connect(ctx.destination);
 	osc.start();
 	osc.stop(ctx.currentTime + 0.5);
 }
