@@ -7,11 +7,11 @@
 </head>
 <body>
 <a class="undecorated" href=".">Home</a>
+<script src="Scales.js"></script>
 <h1 id="scales">Scales</h1>
 <p><em>June 2021</em></p>
 <p>To define a scale, we would like to pick a set of notes within an octave so that the intervals between the notes are consonant.</p>
 <h2 id="pythagorean-scale">Pythagorean scale</h2>
-<script src="Scales.js"></script>
 <p>We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the &ldquo;tonic&rdquo;), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:</p>
 <table>
 <thead>
@@ -33,6 +33,10 @@
 <td style="text-align: right;">2</td>
 <td>(3⁄2)<sup>2</sup> = 9⁄4</td>
 </tr>
+<tr>
+<td style="text-align: right;"></td>
+<td><button title="Play notes" onclick="playRatios([1, 3/2, 9/4], 440)">Play ▶</button></td>
+</tr>
 </tbody>
 </table>
 <p>But, wait, 9⁄4 is greater than 2, so we need to &ldquo;normalize&rdquo; this note so it falls within our target range by moving its pitch down an octave to 9⁄8.</p>
@@ -42,7 +46,7 @@
 <tr>
 <th>Name</th>
 <th style="text-align: right;"># of fifths</th>
-<th>Unnormalized ratio<br /><button title="Play notes" onclick="playScale()">▶</button></th>
+<th>Unnormalized ratio</th>
 <th>Normalized ratio</th>
 </tr>
 </thead>
@@ -88,6 +92,12 @@
 <td style="text-align: right;">3</td>
 <td>(3⁄2)<sup>3</sup> = 27⁄8</td>
 <td>27⁄16</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;"></td>
+<td><button title="Play notes" onclick="playRatios([8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8], 440)">Play ▶</button></td>
+<td><button title="Play notes" onclick="playRatios([32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16], 440)">Play  ▶</button></td>
 </tr>
 </tbody>
 </table>
@@ -140,6 +150,11 @@
 <td>D</td>
 <td>2⁄1 = 2.00</td>
 <td>2⁄1 : 16⁄9 = 9⁄8</td>
+</tr>
+<tr>
+<td></td>
+<td><button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], 440)">Play ▶</button></td>
+<td></td>
 </tr>
 </tbody>
 </table>

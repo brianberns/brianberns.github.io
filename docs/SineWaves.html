@@ -7,23 +7,12 @@
 </head>
 <body>
 <a class="undecorated" href=".">Home</a>
+<script src="SineWaves.js"></script>
 <h1 id="music-theory-sine-waves">Music theory: Sine waves</h1>
 <p><em>June 2021</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>I have a decent understanding of physics and a love of music, but music theory has always mystified me. In this series, I'd like to document my notes on the topic as I try to learn it from scratch. I'm sure this will be far from comprehensive or rigorous, so I welcome <a href="https://github.com/brianberns/brianberns.github.io/issues">suggestions and corrections</a>.</p>
 <h2 id="sine-waves">Sine waves</h2>
-<script>
-var ctx = new AudioContext();
-
-function play() {
-	var osc = ctx.createOscillator();
-	osc.type = "sine";
-	osc.frequency.value = 440;
-	osc.connect(ctx.destination);
-	osc.start();
-	osc.stop(ctx.currentTime + 0.5);
-}
-</script>
 <p>Why are sine waves used to describe basic musical sounds? This might seem obvious, but it isn't, and the question is often glossed over. The sound of a plucked string, for example, is <strong>not</strong> a pure sine wave. Pure sine waves actually sound <a href="https://szynalski.com/tone#A4,v0.06">harsh</a>. <button title="Play pure sine wave" onclick="play()">▶</button></p>
 <p>Yes, we can use a Fourier transform to represent any sound as the sum of sine waves, but that begs the question. Why not use some other waveform as the basis for music theory? I think there are two main reasons:</p>
 <ul>

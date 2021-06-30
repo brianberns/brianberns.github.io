@@ -1,10 +1,10 @@
 var ctx = new AudioContext();
 
-function playNote(freq, startTime) {
+function playFreq(freq, startTime) {
     var envelope = ctx.createGain();
     envelope.gain.value = 0;
-    envelope.gain.setValueAtTime(0.15, startTime);
-    envelope.gain.setTargetAtTime(0, startTime, 1);
+    envelope.gain.setValueAtTime(0.1, startTime);
+    envelope.gain.setTargetAtTime(0, startTime, .5);
     envelope.connect(ctx.destination);
 
     var osc = ctx.createOscillator();
@@ -14,12 +14,9 @@ function playNote(freq, startTime) {
     osc.start();
 }
 
-function playScale() {
-    var freq = 110;
-    var offset = 0;
-    for (let i = 0; i < 7; i++) {
-        playNote(freq, ctx.currentTime + offset);
-        freq = 3 / 2 * freq;
-        offset = offset + 1;
-    }
+function playRatios(ratios, freq) {
+    ratios
+        .map((ratio, index) => [ratio, index])
+        .forEach(([ratio, index]) =>
+            playFreq(freq * ratio, ctx.currentTime + index/1.5));
 }

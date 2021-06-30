@@ -1,6 +1,8 @@
 ---
 title: Music theory - Sine waves
 ---
+<script src="SineWaves.js"></script>
+
 # Music theory: Sine waves
 
 *June 2021*
@@ -10,19 +12,6 @@ title: Music theory - Sine waves
 I have a decent understanding of physics and a love of music, but music theory has always mystified me. In this series, I'd like to document my notes on the topic as I try to learn it from scratch. I'm sure this will be far from comprehensive or rigorous, so I welcome [suggestions and corrections](https://github.com/brianberns/brianberns.github.io/issues).
 
 ## Sine waves
-
-<script>
-var ctx = new AudioContext();
-
-function play() {
-	var osc = ctx.createOscillator();
-	osc.type = "sine";
-	osc.frequency.value = 440;
-	osc.connect(ctx.destination);
-	osc.start();
-	osc.stop(ctx.currentTime + 0.5);
-}
-</script>
 
 Why are sine waves used to describe basic musical sounds? This might seem obvious, but it isn't, and the question is often glossed over. The sound of a plucked string, for example, is **not** a pure sine wave. Pure sine waves actually sound [harsh](https://szynalski.com/tone#A4,v0.06). <button title="Play pure sine wave" onclick="play()">&#9654;</button>
 
