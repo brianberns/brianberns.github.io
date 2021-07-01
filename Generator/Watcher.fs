@@ -27,24 +27,34 @@ module Watcher =
     /// A file has been created.
     let onCreated htmlDir (args : FileSystemEventArgs) =
         assert(args.FullPath.EndsWith(mdExt))
-        Markdown.generate htmlDir <| FileInfo(args.FullPath)
+        let mdFile = FileInfo(args.FullPath)
+        printfn "Markdown file created: %s" mdFile.Name
+        Markdown.generate htmlDir mdFile
 
     /// A file has been changed.
     let onChanged htmlDir (args : FileSystemEventArgs) =
         assert(args.FullPath.EndsWith(mdExt))
-        Markdown.generate htmlDir <| FileInfo(args.FullPath)
+        let mdFile = FileInfo(args.FullPath)
+        printfn "Markdown file changed: %s" mdFile.Name
+        Markdown.generate htmlDir mdFile
 
     /// A file has been renamed.
     let onRenamed htmlDir (args : RenamedEventArgs) =
         if args.OldFullPath.EndsWith(mdExt) then
-            delete htmlDir <| FileInfo(args.OldFullPath)
+            let mdFile = FileInfo(args.OldFullPath)
+            printfn "Markdown file renamed from: %s" mdFile.Name
+            delete htmlDir mdFile
         if args.FullPath.EndsWith(mdExt) then
-            Markdown.generate htmlDir <| FileInfo(args.FullPath)
+            let mdFile = FileInfo(args.FullPath)
+            printfn "Markdown file renamed to: %s" mdFile.Name
+            Markdown.generate htmlDir mdFile
 
     /// A file has been deleted.
     let onDeleted htmlDir (args : FileSystemEventArgs) =
         assert(args.FullPath.EndsWith(mdExt))
-        delete htmlDir <| FileInfo(args.FullPath)
+        let mdFile = FileInfo(args.FullPath)
+        printfn "Markdown file deleted: %s" mdFile.Name
+        delete htmlDir mdFile
 
     let watch (htmlDir : DirectoryInfo) (mdDir : DirectoryInfo) =
 
