@@ -8,7 +8,7 @@ Brian Berns
 ## Notes on music theory
 
 * June 2021
-  * [Sine waves](SineWaves.html)
-  * [Intervals](Intervals.html)
-  * [Scales](Scales.html)
-  * [Circle of fifths](CircleOfFifths.html)
+  * [Sine waves](01-SineWaves.html)
+  * [Intervals](02-Intervals.html)
+  * [Pythagorean scales](03-PythagoreanScales.html)
+  * [Circle of fifths](04-CircleOfFifths.html)

@@ -46,4 +46,5 @@ When the frequency ratio of an interval is greater than 2:1, it can thought of a
 
 ## Related articles
 
-Previous: [Sine waves](SineWaves.html)
+* Previous: [Sine waves](01-SineWaves.html)
+* Next: [Pythagorean scales](03-PythagoreanScales.html)

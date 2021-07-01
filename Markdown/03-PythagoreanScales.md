@@ -3,17 +3,13 @@ title: Music theory - Scales
 ---
 <script src="Sound.js"></script>
 
-# Music theory: Scales
+# Music theory: Pythagorean scales
 
 *June 2021*
 
-To define a scale, we would like to pick a set of notes within an octave so that the intervals between the notes are consonant.
-
-## Pythagorean scale
-
 <script>var d = 587.3295;</script>
 
-We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the "tonic"), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:
+To define a scale, we would like to pick a set of notes within an octave so that the intervals between the notes are consonant. We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the "tonic"), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:
 
 | \# of fifths | Frequency ratio |
 | -: | ---------- |
@@ -63,5 +59,10 @@ We've also computed the ratio of each note relative to the previous note in the 
 | 256&frasl;243 = 1.05 | Half step |
 
 As a result, the notes in the scale are distributed somewhat evenly throughout the octave, which seems desirable. The pattern of whole (`W`) and half (`h`) steps is `W h W W W h W`, but since the scale repeats at every octave, so does the pattern: `W h W W W h W W h W W W h W W h W W W h W` ... . Any scale that follows a similar pattern of half steps separated by two or three whole steps is called a [diatonic scale](https://www.phys.uconn.edu/~gibson/Notes/Section3_4/Sec3_4.htm), such as the white keys on a piano.
+
+## Related articles
+
+* Previous: [Intervals](02-Intervals.html)
+* Next: [Circle of fifths](04-CircleOfFifths.html)
 
 [^1]: Is it luck? There doesn't seem to be anything in the process that guarantees such an outcome mathematically, but I could be wrong. It just seems to work out nicely.
