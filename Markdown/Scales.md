@@ -1,9 +1,9 @@
 ---
-title: Scales
+title: Music theory - Scales
 ---
 <script src="Sound.js"></script>
 
-# Scales
+# Music theory: Scales
 
 *June 2021*
 
