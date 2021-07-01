@@ -59,3 +59,5 @@ The flats and sharps fill the gaps in our diatonic scale, so the interval formed
 ## Related articles
 
 * Previous: [Pythagorean scales](03-PythagoreanScales.html)
+* Next: [Equal temperament](05-EqualTemperament.html)
+* 
