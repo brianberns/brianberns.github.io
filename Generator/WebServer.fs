@@ -8,11 +8,11 @@ open Suave.Operators
 module WebServer =
 
     /// Starts the web server.
-    let start htmlDirPath =
+    let start (htmlDir : DirectoryInfo) =
 
             // start web server
         let config =
-            DirectoryInfo(htmlDirPath).FullName
+            htmlDir.FullName
                 |> Some
                 |> defaultConfig.withHomeFolder
         let app =

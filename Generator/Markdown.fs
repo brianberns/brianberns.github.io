@@ -13,14 +13,14 @@ open YamlDotNet.Serialization.NamingConventions
 
 open DotLiquid
 
-module Markdown =
+/// YAML front matter.
+[<CLIMutable>]
+type FrontMatter =
+    {
+        Title : string
+    }
 
-    /// YAML front matter.
-    [<CLIMutable>]
-    type private FrontMatter =
-        {
-            Title : string
-        }
+module Markdown =
 
     /// Reads contents of the given file.
     // https://stackoverflow.com/questions/9759697/reading-a-file-used-by-another-process
@@ -54,8 +54,15 @@ module Markdown =
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .Build()
 
+    /// Answers the HTML file corresponding to the given markdown file.
+    let getHtmlFile (htmlDir : DirectoryInfo) (mdFile : FileInfo) =
+        let htmlFileName =
+            $"{Path.GetFileNameWithoutExtension(mdFile.Name)}.html"
+        Path.Combine(htmlDir.FullName, htmlFileName)
+            |> FileInfo
+
     /// Generates HTML from the given markdown file.
-    let generate htmlDirPath (mdFile : FileInfo) =
+    let generate (htmlDir : DirectoryInfo) (mdFile : FileInfo) =
 
             // parse markdown source
         let md = readFile mdFile.FullName
@@ -90,12 +97,9 @@ module Markdown =
 
             // save file
         use writer =
-            let htmlFileName =
-                $"{Path.GetFileNameWithoutExtension(mdFile.Name)}.html"
-            let htmlFilePath =
-                Path.Combine(htmlDirPath, htmlFileName)
+            let htmlFile = getHtmlFile htmlDir mdFile
             new StreamWriter(
-                htmlFilePath,
+                htmlFile.FullName,
                 append = false,
                 encoding = Text.Encoding.UTF8)
         writer.Write(html)
