@@ -42,7 +42,7 @@ Clearly, we need a way to organize all these intervals (and explain their confus
 
 ## Stacking
 
-When the frequency ratio of an interval is greater than 2:1, it can thought of as a "stack" of simpler intervals. For example, the 3:1 ratio <button onclick="playRatios([1, 3], 440)">&#9654;</button> is called a perfect twelfth, but is equivalent to an octave plus a fifth. Be careful, though: We use the word "plus" here because intervals are logarithmic. We actually have to multiply the ratios together: 3&frasl;1 = 2&frasl;1 &times; 3&frasl;2.
+When the frequency ratio of an interval is greater than 2:1, it can thought of as a "stack" of simpler intervals. For example, the 3:1 ratio <button onclick="playRatios([1, 3], 440)">&#9654;</button> is called a perfect twelfth, but is equivalent to an octave plus a fifth <button onclick="playRatios([1, 2, 3], 440)">&#9654;</button>. Be careful, though: We use the word "plus" here because intervals are logarithmic. We actually have to multiply the ratios together: 3&frasl;1 = 2&frasl;1 &times; 3&frasl;2.
 
 ## Related articles
 
