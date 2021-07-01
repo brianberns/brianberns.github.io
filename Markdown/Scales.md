@@ -11,7 +11,7 @@ To define a scale, we would like to pick a set of notes within an octave so that
 
 ## Pythagorean scale
 
-<script>var d = 293.6648;</script>
+<script>var d = 587.3295;</script>
 
 We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the "tonic"), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:
 

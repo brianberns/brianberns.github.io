@@ -11,3 +11,4 @@ Brian Berns
   * [Sine waves](SineWaves.html)
   * [Intervals](Intervals.html)
   * [Scales](Scales.html)
+  * [Circle of fifths](CircleOfFifths.html)
