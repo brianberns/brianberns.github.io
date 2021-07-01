@@ -1,6 +1,8 @@
 ---
 title: Music theory - Intervals
 ---
+<script src="Sound.js"></script>
+
 # Music theory: Intervals
 
 *June 2021*
@@ -15,30 +17,32 @@ If the two notes are in phase, we get a louder note, and if they are out of phas
 
 ## Octave
 
-If one note is vibrating twice as fast as the other (i.e. their frequencies are in a 2:1 ratio) we have an octave. Such notes sound similar to humans; they seem to "rhyme" in a way.
+If one note is vibrating twice as fast as the other (i.e. their frequencies are in a 2:1 ratio) we have an octave <button onclick="playRatios([1, 2], 440)">&#9654;</button>. Such notes sound similar to humans; they seem to "rhyme" in a way.
 
 The waveform of an octave has alternating tall and short peaks, but [its exact shape of depends on the phase relationship of the two notes](https://www.desmos.com/calculator/7idxde6tyo). Interestingly, all these different waveforms sound the same to humans, because our ears are [insensitive to phase differences](https://ptolemy.berkeley.edu/eecs20/week8/phase.html). (Presumably because we are performing a Fourier transform and discarding the phase information.)
 
 ## Consonance
 
-In general, intervals with simple frequency ratios tend to sound pleasant, or "consonant", regardless of the phase relationship of the two notes. These simple ratios avoid the [unpleasant "beating" effect](https://www.phys.uconn.edu/~gibson/Notes/Section5_5/Sec5_5.htm) that occurs when the ratio isn't as simple (e.g. 11:10).
+In general, intervals with simple frequency ratios tend to sound pleasant, or "consonant", regardless of the phase relationship of the two notes. These simple ratios avoid the [unpleasant "beating" effect](https://www.phys.uconn.edu/~gibson/Notes/Section5_5/Sec5_5.htm) that occurs when the ratio isn't as simple (e.g. 11:10 <button onclick="playRatios([1, 11/10], 440)">&#9654;</button>).
 
-The next simplest ratio after 2:1 is 3:2, which is called a "perfect fifth". We can continue in this way to build a list of consonant intervals:
+The next simplest ratio after 2:1 is 3:2, which is called a "perfect fifth" <button onclick="playRatios([1, 3/2], 440)">&#9654;</button>. We can continue in this way to build a list of consonant intervals:
 
-* 1:1 - Unison
-* 2:1 - Octave
-* 3:2 - Perfect fifth
-* 4:3 - Perfect fourth
-* 5:3 - Major sixth
-* 5:4 - Major third
-* 6:5 - Minor third
-* etc.
+| Ratio | Name | Play |
+| ----- | ---- | ---- |
+| 1:1 | Unison | <button onclick="playRatios([1, 1], 440)">&#9654;</button> |
+| 2:1 | Octave | <button onclick="playRatios([1, 2], 440)">&#9654;</button> |
+| 3:2 | Perfect fifth | <button onclick="playRatios([1, 3/2], 440)">&#9654;</button> |
+| 4:3 | Perfect fourth | <button onclick="playRatios([1, 4/3], 440)">&#9654;</button> |
+| 5:3 | Major sixth | <button onclick="playRatios([1, 5/3], 440)">&#9654;</button> |
+| 5:4 | Major third | <button onclick="playRatios([1, 5/4], 440)">&#9654;</button> |
+| 6:5 | Minor third | <button onclick="playRatios([1, 6/5], 440)">&#9654;</button> |
+| etc. | |
 
 Clearly, we need a way to organize all these intervals (and explain their confusing names). We'll start discussing that soon.
 
 ## Stacking
 
-When the frequency ratio of an interval is greater than 2:1, it can thought of as a "stack" of simpler intervals. For example, the 3:1 ratio is called a perfect twelfth, but is equivalent to an octave plus a fifth. Be careful, though: We use the word "plus" here because intervals are logarithmic. We actually have to multiply the ratios together: 3&frasl;1 = 2&frasl;1 &times; 3&frasl;2.
+When the frequency ratio of an interval is greater than 2:1, it can thought of as a "stack" of simpler intervals. For example, the 3:1 ratio <button onclick="playRatios([1, 3], 440)">&#9654;</button> is called a perfect twelfth, but is equivalent to an octave plus a fifth. Be careful, though: We use the word "plus" here because intervals are logarithmic. We actually have to multiply the ratios together: 3&frasl;1 = 2&frasl;1 &times; 3&frasl;2.
 
 ## Related articles
 

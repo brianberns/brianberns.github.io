@@ -1,7 +1,7 @@
 ---
 title: Scales
 ---
-<script src="Scales.js"></script>
+<script src="Sound.js"></script>
 
 # Scales
 
