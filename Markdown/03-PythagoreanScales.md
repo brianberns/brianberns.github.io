@@ -47,7 +47,7 @@ We've also given the notes arbitrary names, which we'll explain in a moment. Let
 | D | 2&frasl;1 = 2.00 | 2&frasl;1 : 16&frasl;9 = 9&frasl;8 |
 |   | <button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], d)">Play &#9654;</button> |
 
-The notes in this scale are D, E, F, G, A, B, and C. The scale then lands back on D, one octave higher. So, we've simply assigned the first seven letters of the alphabet, in order from A through G to the seven distinct notes we've created. The scale forms a loop, so we can start on any note.
+The notes in this scale are D, E, F, G, A, B, and C. The scale then lands back on D, one octave higher. So, we've simply assigned the first seven letters of the alphabet, in order from A through G, to the seven distinct notes we've created. The scale forms a loop, so we can start on any note.
 
 ## Diatonic scales
 
