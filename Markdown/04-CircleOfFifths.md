@@ -37,21 +37,21 @@ The notes we have at this point are:
 
 In this Pythagorean tuning, A&flat; and G&sharp; are slightly different notes, making them very dissonant when played together <button onclick="playRatios([1024/729, 729/512], d)">&#9654;</button>. Ideally, we would like them to align, creating an exact "circle of fifths" &ndash; will look at how to do that soon. For now, we are left with twelve usable notes in a "chromatic" scale:
 
-| Name     | Ratio to tonic        | Ratio to previous note |
-| -------- | --------------------- | ---------------------: |
-| D        | 1 = 1.00              | &ndash;                |
-| E&flat;  | 256&frasl;243 = 1.05  | 1.05 / 1.00 = 1.05     |
-| E        | 9&frasl;8 = 1.13      | 1.13 / 1.05 = 1.08     |
-| F        | 32&frasl;27 = 1.19    | 1.19 / 1.13 = 1.05     |
-| F&sharp; | 81&frasl;64 = 1.27    | 1.27 / 1.19 = 1.07     |
-| G        | 4&frasl;3 = 1.33      | 1.33 / 1.27 = 1.04     |
-| A&flat;  | 1024&frasl;729 = 1.40 | 1.40 / 1.33 = 1.05     |
-| A        | 3&frasl;2 = 1.50      | 1.50 / 1.40 = 1.07     |
-| B&flat;  | 128&frasl;81 = 1.58   | 1.58 / 1.50 = 1.05     |
-| B        | 27&frasl;16 = 1.69    | 1.69 / 1.58 = 1.07     |
-| C        | 16&frasl;9 = 1.78     | 1.78 / 1.69 = 1.05     |
-| C&sharp; | 243&frasl;128 = 1.90  | 1.90 / 1.78 = 1.07     |
-| D        | 2&frasl;1 = 2.00      | 2.00 / 1.90 = 1.05     |
+| Name     | Ratio to tonic               | Ratio to previous note        |
+| -------- | ---------------------------- | ----------------------------: |
+| D        | 1 = 1.00                     | &ndash;                       |
+| E&flat;  | 256&frasl;243 &approx; 1.05  | 1.05 / 1.00 &approx; 1.05     |
+| E        | 9&frasl;8 &approx; 1.13      | 1.13 / 1.05 &approx; 1.08     |
+| F        | 32&frasl;27 &approx; 1.19    | 1.19 / 1.13 &approx; 1.05     |
+| F&sharp; | 81&frasl;64 &approx; 1.27    | 1.27 / 1.19 &approx; 1.07     |
+| G        | 4&frasl;3 &approx; 1.33      | 1.33 / 1.27 &approx; 1.04     |
+| A&flat;  | 1024&frasl;729 &approx; 1.40 | 1.40 / 1.33 &approx; 1.05     |
+| A        | 3&frasl;2 &approx; 1.50      | 1.50 / 1.40 &approx; 1.07     |
+| B&flat;  | 128&frasl;81 &approx; 1.58   | 1.58 / 1.50 &approx; 1.05     |
+| B        | 27&frasl;16 &approx; 1.69    | 1.69 / 1.58 &approx; 1.07     |
+| C        | 16&frasl;9 &approx; 1.78     | 1.78 / 1.69 &approx; 1.05     |
+| C&sharp; | 243&frasl;128 &approx; 1.90  | 1.90 / 1.78 &approx; 1.07     |
+| D        | 2&frasl;1 = 2.00             | 2.00 / 1.90 &approx; 1.05     |
 |          | <button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], d)">Play &#9654;</button> |
 
 The flats and sharps fill the gaps in our diatonic scale, so the interval formed by each adjancent pair of notes is now (approximately) a half-step.
@@ -60,4 +60,3 @@ The flats and sharps fill the gaps in our diatonic scale, so the interval formed
 
 * Previous: [Pythagorean scales](03-PythagoreanScales.html)
 * Next: [Equal temperament](05-EqualTemperament.html)
-* 
