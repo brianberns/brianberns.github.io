@@ -33,7 +33,7 @@ We can also find notes in the other direction, moving down by fifths instead of 
 | B |  3 | (3&frasl;2)<sup>3</sup> = 27&frasl;8  | 27&frasl;16 |
 |   |    | <button title="Play notes" onclick="playRatios([8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8], d)">Play &#9654;</button> | <button title="Play notes" onclick="playRatios([32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16], d)">Play  &#9654;</button> |
 
-We've also given the notes arbitrary names. Let's put these normalized notes in order from lowest to highest within the octave:
+We've also given the notes arbitrary names, which we'll explain in a moment. Let's put these normalized notes in order from lowest to highest within the octave:
 
 | Name | Ratio to tonic | Ratio to previous note |
 | - | ----------- | - |
@@ -47,16 +47,16 @@ We've also given the notes arbitrary names. Let's put these normalized notes in 
 | D | 2&frasl;1 = 2.00 | 2&frasl;1 : 16&frasl;9 = 9&frasl;8 |
 |   | <button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], d)">Play &#9654;</button> |
 
-So the notes in this scale are D, E, F, G, A, B, and C. The scale then lands back on D, one octave higher.
+So the notes in this scale are D, E, F, G, A, B, and C. The scale then lands back on D, one octave higher. We've simply assigned the first seven letters of the alphabet, in order from A through G to the seven distinct notes we've created. Since the scale forms a loop, we can start on any note.
 
 ## Diatonic scales
 
 We've also computed the ratio of each note relative to the previous note in the scale. Luckily[^1], there are only two distinct step sizes in the scale:
 
-| Step size | Name |
-| - | - |
-| 9&frasl;8 &approx; 1.13 | Whole step |
-| 256&frasl;243 &approx; 1.05 | Half step |
+| Step size                   | Name       |
+| --------------------------- | ---------- |
+| 9&frasl;8 &approx; 1.13     | Whole step |
+| 256&frasl;243 &approx; 1.05 | Half step  |
 
 As a result, the notes in the scale are distributed somewhat evenly throughout the octave, which seems desirable. The pattern of whole (`W`) and half (`h`) steps is `W h W W W h W`, but since the scale repeats at every octave, so does the pattern: `W h W W W h W W h W W W h W W h W W W h W` ... . Any scale that follows a similar pattern of half steps separated by two or three whole steps is called a [diatonic scale](https://www.phys.uconn.edu/~gibson/Notes/Section3_4/Sec3_4.htm), such as the white keys on a piano.
 
