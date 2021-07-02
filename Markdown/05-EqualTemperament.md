@@ -22,19 +22,19 @@ This results in the following chromatic scale:
 
 | Name     | Pythagorean ratio            | ET ratio                              | ET frequency (hz) |
 | -------- | ---------------------------- | ------------------------------------- | ----------------: |
-| D        | 1 = 1.00                     | 2<sup>0&frasl;12</sup> = 1.00         | 587.3295		  |
-| E&flat;  | 256&frasl;243 &approx; 1.05  | 2<sup>1&frasl;12</sup> &approx; 1.06  | 622.2540		  |
-| E        | 9&frasl;8 &approx; 1.13      | 2<sup>2&frasl;12</sup> &approx; 1.12  | 659.2551		  |
-| F        | 32&frasl;27 &approx; 1.19    | 2<sup>3&frasl;12</sup> &approx; 1.19  | 698.4565		  |
-| F&sharp; | 81&frasl;64 &approx; 1.27    | 2<sup>4&frasl;12</sup> &approx; 1.26  | 739.9888		  |
-| G        | 4&frasl;3 &approx; 1.33      | 2<sup>5&frasl;12</sup> &approx; 1.33  | 783.9909		  |
-| A&flat;  | 1024&frasl;729 &approx; 1.40 | 2<sup>6&frasl;12</sup> &approx; 1.41  | 830.6094		  |
-| A        | 3&frasl;2 &approx; 1.50      | 2<sup>7&frasl;12</sup> &approx; 1.50  | 880.0000    	  |
-| B&flat;  | 128&frasl;81 &approx; 1.58   | 2<sup>8&frasl;12</sup> &approx; 1.59  | 932.3275		  |
-| B        | 27&frasl;16 &approx; 1.69    | 2<sup>9&frasl;12</sup> &approx; 1.68  | 987.7666		  |
-| C        | 16&frasl;9 &approx; 1.78     | 2<sup>10&frasl;12</sup> &approx; 1.78 | 1046.502		  |
-| C&sharp; | 243&frasl;128 &approx; 1.90  | 2<sup>11&frasl;12</sup> &approx; 1.89 | 1108.731		  |
-| D        | 2&frasl;1 = 2.00             | 2<sup>12&frasl;12</sup> = 2.00        | 1174.659		  |
+| D        | 1 = 1.00                     | 2<sup>0&frasl;12</sup> = 1.00         | 587.33		      |
+| E&flat;  | 256&frasl;243 &approx; 1.05  | 2<sup>1&frasl;12</sup> &approx; 1.06  | 622.25		      |
+| E        | 9&frasl;8 &approx; 1.13      | 2<sup>2&frasl;12</sup> &approx; 1.12  | 659.26		      |
+| F        | 32&frasl;27 &approx; 1.19    | 2<sup>3&frasl;12</sup> &approx; 1.19  | 698.46		      |
+| F&sharp; | 81&frasl;64 &approx; 1.27    | 2<sup>4&frasl;12</sup> &approx; 1.26  | 739.99		      |
+| G        | 4&frasl;3 &approx; 1.33      | 2<sup>5&frasl;12</sup> &approx; 1.33  | 783.99		      |
+| A&flat;  | 1024&frasl;729 &approx; 1.40 | 2<sup>6&frasl;12</sup> &approx; 1.41  | 830.61		      |
+| A        | 3&frasl;2 &approx; 1.50      | 2<sup>7&frasl;12</sup> &approx; 1.50  | 880.00    	      |
+| B&flat;  | 128&frasl;81 &approx; 1.58   | 2<sup>8&frasl;12</sup> &approx; 1.59  | 932.33		      |
+| B        | 27&frasl;16 &approx; 1.69    | 2<sup>9&frasl;12</sup> &approx; 1.68  | 987.76		      |
+| C        | 16&frasl;9 &approx; 1.78     | 2<sup>10&frasl;12</sup> &approx; 1.78 | 1046.50		      |
+| C&sharp; | 243&frasl;128 &approx; 1.90  | 2<sup>11&frasl;12</sup> &approx; 1.89 | 1108.73		      |
+| D        | 2&frasl;1 = 2.00             | 2<sup>12&frasl;12</sup> = 2.00        | 1174.66		      |
 |          | <button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], d)">Play &#9654;</button> | <button onclick="playRatios([2**(0/12), 2**(1/12), 2**(2/12), 2**(3/12), 2**(4/12), 2**(5/12), 2**(6/12), 2**(7/12), 2**(8/12), 2**(9/12), 2**(10/12), 2**(11/12), 2**(12/12)], d)">Play &#9654;</button>
 
 ## Related articles
