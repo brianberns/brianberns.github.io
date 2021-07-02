@@ -16,9 +16,7 @@ We've seen previously how to generate scales using stacked perfect fifths that h
 
 We can fix this by dividing the octave into twelve equal half-steps, such that the ratio between adjancent notes is always 2<sup>1&frasl;12</sup> (&approx; 1.06). This is called "equal temperament" because we have tempered (i.e. slightly adjusted) the notes in the scale. Since a perfect fifth is an interval of seven half-steps, its frequency ratio is now 2<sup>7&frasl;12</sup>:1 (&approx; 1.498) instead of 3:2. This new interval <button onclick="playRatios([1, 2 ** (7/12)], 440)">&#9654;</button> is not quite as pleasing as the original one <button onclick="playRatios([1, 3/2], 440)">&#9654;</button>, but the [compromise](https://youtu.be/6NlI4No3s0M?t=28) is worth the resulting benefits.
 
-At this point, we also need to assign absolute frequencies to our notes, rather than always thinking relatively. So, in equal temperament, we arbitrarily say that 440 hertz is an A (and thus so are 220 hz and 880 hz, etc.).
-
-This results in the following chromatic scale:
+At this point, we also need to assign absolute frequencies to our notes, rather than always thinking relatively. So, in equal temperament, we arbitrarily say that 440 hertz is an A (and thus so are 220 hz and 880 hz, etc.):
 
 | Name     | Pythagorean ratio            | ET ratio                              | ET frequency (hz) |
 | -------- | ---------------------------- | ------------------------------------- | ----------------: |
