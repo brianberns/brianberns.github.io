@@ -14,3 +14,4 @@ Brian Berns
 * July 2021
   * [Circle of fifths](04-CircleOfFifths.html)
   * [Equal temperament](05-EqualTemperament.html)
+  * [Major and minor scales](06-MajorMinorScales.html)

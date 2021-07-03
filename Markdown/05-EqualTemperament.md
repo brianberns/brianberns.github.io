@@ -40,3 +40,4 @@ From here on out, we'll be using equal temperament unless otherwise specified.
 ## Related articles
 
 * Previous: [Circle of fifths](04-CircleOfFifths.html)
+* Next: [Major and minor scales](06-MajorMinorScales.html)

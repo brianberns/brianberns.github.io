@@ -2,6 +2,7 @@
 
 open System
 open System.IO
+open System.Threading
 
 open Markdig
 open Markdig.Extensions.Yaml
@@ -34,9 +35,22 @@ module Markdown =
         use reader = new StreamReader(stream)
         reader.ReadToEnd()
 
+    /// Invokes the given I/O function safely.
+    let private safeIo f args =
+        let maxExcs = 3
+        let rec loop nExcs =
+            try
+                f args
+            with :? IOException ->
+                if nExcs < maxExcs then
+                    Thread.Sleep(100)
+                    loop (nExcs + 1)
+                else reraise ()
+        loop 0
+
     /// Liquid HTML template.
     let private template =
-        readFile "Template.liquid"
+        safeIo readFile "Template.liquid"
             |> Template.Parse
 
     /// Markdown pipeline.
