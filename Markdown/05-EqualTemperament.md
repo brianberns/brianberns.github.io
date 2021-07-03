@@ -39,7 +39,22 @@ From here on out, we'll be using equal temperament unless otherwise specified.
 
 ## Enharmonic notes
 
-Now that we have a constant width for half steps, there is no difference between, say, A&flat; and G&sharp;. They are "enharmonically" equivalent - two names for the same note.
+Now that we have a constant width for half steps, there is no difference between, say, G&sharp; and A&flat;. They are "enharmonically" equivalent &ndash; two names for the same note. So our final list of twelve chromatic notes, starting from C, is:
+
+* C
+* C&sharp;/D&flat;
+* D
+* D&sharp;/E&flat;
+* E
+* F
+* F&sharp;/G&flat;
+* G
+* G&sharp;/A&flat;
+* A
+* A&sharp;/B&flat;
+* B
+
+Each note is exactly one half step from its two adjacent notes.
 
 ## Related articles
 
