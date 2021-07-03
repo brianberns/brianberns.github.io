@@ -54,7 +54,7 @@ In this Pythagorean tuning, A&flat; and G&sharp; are slightly different notes, m
 | D        | 2&frasl;1 = 2.00             | 2.00 / 1.90 &approx; 1.05     |
 |          | <button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], d)">Play &#9654;</button> |
 
-The flats and sharps fill the gaps in our diatonic scale, so the interval formed by each adjancent pair of notes is now (roughly) a half-step.
+The flats and sharps fill the gaps in our diatonic scale, so the interval formed by each adjancent pair of notes is now (roughly) a half step.
 
 ## Related articles
 

@@ -11,10 +11,10 @@ title: Music theory - Equal temperament
 
 We've seen previously how to generate scales using stacked perfect fifths that have been normalized into a single octave. The process can be used to generate both a diatonic scale (seven notes) and a chromatic scale (twelve notes). Unfortunately, there are two problems with scales based on the ideal 3:2 frequency ratio for fifths (aka "just intonation"):
 
-* The half-steps between notes in a chromatic scale aren't the same size.
+* The half steps between notes in a chromatic scale aren't the same size.
 * 12 fifths &ne; 7 octaves.
 
-We can fix this by dividing the octave into twelve equal half-steps, such that the ratio between adjancent notes is always 2<sup>1&frasl;12</sup> (&approx; 1.06). This is called "equal temperament" because we have tempered (i.e. slightly adjusted) the notes in the scale. Since a perfect fifth is an interval of seven half-steps, its frequency ratio is now 2<sup>7&frasl;12</sup>:1 (&approx; 1.498) instead of 3:2. This new interval <button onclick="playRatios([1, 2 ** (7/12)], 440)">&#9654;</button> is not quite as pleasing as the original one <button onclick="playRatios([1, 3/2], 440)">&#9654;</button>, but the [compromise](https://youtu.be/6NlI4No3s0M?t=28) is worth the resulting benefits.
+We can fix this by dividing the octave into twelve equal half steps, such that the ratio between adjancent notes is always 2<sup>1&frasl;12</sup> (&approx; 1.06). This is called "equal temperament" because we have tempered (i.e. slightly adjusted) the notes in the scale. Since a perfect fifth is an interval of seven half-steps, its frequency ratio is now 2<sup>7&frasl;12</sup>:1 (&approx; 1.498) instead of 3:2. This new interval <button onclick="playRatios([1, 2 ** (7/12)], 440)">&#9654;</button> is not quite as pleasing as the original one <button onclick="playRatios([1, 3/2], 440)">&#9654;</button>, but the [compromise](https://youtu.be/6NlI4No3s0M?t=28) is worth the resulting benefits.
 
 At this point, we also need to assign absolute frequencies to our notes, rather than always thinking relatively. So, in equal temperament, we arbitrarily say that 440 hertz is an A and calculate all the other note frequencies from there:
 
@@ -36,6 +36,10 @@ At this point, we also need to assign absolute frequencies to our notes, rather 
 |          | <button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], d)">Play &#9654;</button> | <button onclick="playRatios([2**(0/12), 2**(1/12), 2**(2/12), 2**(3/12), 2**(4/12), 2**(5/12), 2**(6/12), 2**(7/12), 2**(8/12), 2**(9/12), 2**(10/12), 2**(11/12), 2**(12/12)], d)">Play &#9654;</button>
 
 From here on out, we'll be using equal temperament unless otherwise specified.
+
+## Enharmonic notes
+
+Now that we have a constant width for half steps, there is no difference between, say, A&flat; and G&sharp;. They are "enharmonically" equivalent - two names for the same note.
 
 ## Related articles
 
