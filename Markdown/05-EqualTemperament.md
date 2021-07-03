@@ -7,8 +7,6 @@ title: Music theory - Equal temperament
 
 *July 2021*
 
-<script>var d = 587.3295;</script>
-
 We've seen previously how to generate scales using stacked perfect fifths that have been normalized into a single octave. The process can be used to generate both a diatonic scale (seven notes) and a chromatic scale (twelve notes). Unfortunately, there are two problems with scales based on the ideal 3:2 frequency ratio for fifths (aka "just intonation"):
 
 * The half steps between notes in a chromatic scale aren't the same size.
@@ -33,7 +31,7 @@ At this point, we also need to assign absolute frequencies to our notes, rather 
 | C        | 16&frasl;9 &approx; 1.78     | 2<sup>10&frasl;12</sup> &approx; 1.78 | 1046.50		      |
 | C&sharp; | 243&frasl;128 &approx; 1.90  | 2<sup>11&frasl;12</sup> &approx; 1.89 | 1108.73		      |
 | D        | 2&frasl;1 = 2.00             | 2<sup>12&frasl;12</sup> = 2.00        | 1174.66		      |
-|          | <button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], d)">Play &#9654;</button> | <button onclick="playRatios([2**(0/12), 2**(1/12), 2**(2/12), 2**(3/12), 2**(4/12), 2**(5/12), 2**(6/12), 2**(7/12), 2**(8/12), 2**(9/12), 2**(10/12), 2**(11/12), 2**(12/12)], d)">Play &#9654;</button>
+|          | <button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], note.D)">Play &#9654;</button> | <button onclick="playRatios([2**(0/12), 2**(1/12), 2**(2/12), 2**(3/12), 2**(4/12), 2**(5/12), 2**(6/12), 2**(7/12), 2**(8/12), 2**(9/12), 2**(10/12), 2**(11/12), 2**(12/12)], note.D)">Play &#9654;</button>
 
 From here on out, we'll be using equal temperament unless otherwise specified.
 

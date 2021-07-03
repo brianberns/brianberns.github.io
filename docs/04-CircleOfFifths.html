@@ -10,7 +10,6 @@
 <script src="Sound.js"></script>
 <h1 id="music-theory-circle-of-fifths">Music theory: Circle of fifths</h1>
 <p><em>July 2021</em></p>
-<script>var d = 587.3295;</script>
 <p>We've seen that we can use a series of perfect fifths to generate a diatonic scale. We can continue the process to generate more than just seven notes, but how many do we need?</p>
 <p>Since each pair of adjancent notes is in the ratio 3:2, after six steps in each direction we have an interval of (3⁄2)<sup>12</sup>, which is almost, but not quite, equal to seven octaves:</p>
 <ul>
@@ -109,12 +108,12 @@
 <tr>
 <td></td>
 <td style="text-align: right;"></td>
-<td><button onclick="playRatios([64/729, 32/243, 16/81, 8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8, 81/16, 243/32, 729/64], d)">Play ▶</button></td>
-<td><button onclick="playRatios([1024/729, 256/243, 128/81, 32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16, 81/64, 243/128, 729/512], d)">Play  ▶</button></td>
+<td><button onclick="playRatios([64/729, 32/243, 16/81, 8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8, 81/16, 243/32, 729/64], note.D)">Play ▶</button></td>
+<td><button onclick="playRatios([1024/729, 256/243, 128/81, 32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16, 81/64, 243/128, 729/512], note.D)">Play  ▶</button></td>
 </tr>
 </tbody>
 </table>
-<p>In this Pythagorean tuning, A♭ and G♯ are slightly different notes, making them very dissonant when played together <button onclick="playRatios([1024/729, 729/512], d)">▶</button>. Ideally, we would like them to align, creating an exact &ldquo;circle of fifths&rdquo; – will look at how to do that soon. For now, we are left with twelve usable notes in a &ldquo;chromatic&rdquo; scale:</p>
+<p>In this Pythagorean tuning, A♭ and G♯ are slightly different notes, making them very dissonant when played together <button onclick="playRatios([1024/729, 729/512], note.D)">▶</button>. Ideally, we would like them to align, creating an exact &ldquo;circle of fifths&rdquo; – will look at how to do that soon. For now, we are left with twelve usable notes in a &ldquo;chromatic&rdquo; scale:</p>
 <table>
 <thead>
 <tr>
@@ -191,7 +190,7 @@
 </tr>
 <tr>
 <td></td>
-<td><button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], d)">Play ▶</button></td>
+<td><button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], note.D)">Play ▶</button></td>
 <td style="text-align: right;"></td>
 </tr>
 </tbody>

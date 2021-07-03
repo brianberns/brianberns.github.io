@@ -7,8 +7,6 @@ title: Music theory - Scales
 
 *June 2021*
 
-<script>var d = 587.3295;</script>
-
 To define a scale, we would like to pick a set of notes within an octave so that the intervals between the notes are consonant. We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the "tonic"), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:
 
 | \# of fifths | Frequency ratio |
@@ -16,7 +14,7 @@ To define a scale, we would like to pick a set of notes within an octave so that
 |  0 | (3&frasl;2)<sup>0</sup> = 1
 |  1 | (3&frasl;2)<sup>1</sup> = 3&frasl;2
 |  2 | (3&frasl;2)<sup>2</sup> = 9&frasl;4
-|    | <button title="Play notes" onclick="playRatios([1, 3/2, 9/4], d)">Play &#9654;</button> |
+|    | <button title="Play notes" onclick="playRatios([1, 3/2, 9/4], note.D)">Play &#9654;</button> |
 
 But, wait, 9&frasl;4 is greater than 2, so we need to "normalize" this note so it falls within our target range by moving its pitch down an octave to 9&frasl;8.
 
@@ -31,7 +29,7 @@ We can also find notes in the other direction, moving down by fifths instead of 
 | A |  1 | (3&frasl;2)<sup>1</sup> = 3&frasl;2   | 3&frasl;2   |
 | E |  2 | (3&frasl;2)<sup>2</sup> = 9&frasl;4   | 9&frasl;8   |
 | B |  3 | (3&frasl;2)<sup>3</sup> = 27&frasl;8  | 27&frasl;16 |
-|   |    | <button title="Play notes" onclick="playRatios([8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8], d)">Play &#9654;</button> | <button title="Play notes" onclick="playRatios([32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16], d)">Play  &#9654;</button> |
+|   |    | <button title="Play notes" onclick="playRatios([8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8], note.D)">Play &#9654;</button> | <button title="Play notes" onclick="playRatios([32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16], note.D)">Play  &#9654;</button> |
 
 We've also given the notes arbitrary names, which we'll explain in a moment. Let's put these normalized notes in order from lowest to highest within the octave:
 
@@ -45,7 +43,7 @@ We've also given the notes arbitrary names, which we'll explain in a moment. Let
 | B | 27&frasl;16 = 1.69 | 27&frasl;16 : 3&frasl;2 = 9&frasl;8 |
 | C | 16&frasl;9 = 1.78 | 16&frasl;9 : 27&frasl;16 = 256&frasl;243 |
 | D | 2&frasl;1 = 2.00 | 2&frasl;1 : 16&frasl;9 = 9&frasl;8 |
-|   | <button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], d)">Play &#9654;</button> |
+|   | <button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], note.D)">Play &#9654;</button> |
 
 The notes in this scale are D, E, F, G, A, B, and C. The scale then lands back on D, one octave higher. So, we've simply assigned the first seven letters of the alphabet, in order from A through G, to the seven distinct notes we've created. The scale forms a loop, so we can start on any note.
 

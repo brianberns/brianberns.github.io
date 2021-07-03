@@ -1,7 +1,7 @@
-var ctx = new AudioContext();
+let ctx = new AudioContext();
 
 function play() {
-	var osc = ctx.createOscillator();
+	let osc = ctx.createOscillator();
 	osc.type = "sine";
 	osc.frequency.value = 440;
 	osc.connect(ctx.destination);

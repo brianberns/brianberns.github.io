@@ -10,7 +10,6 @@
 <script src="Sound.js"></script>
 <h1 id="music-theory-pythagorean-scales">Music theory: Pythagorean scales</h1>
 <p><em>June 2021</em></p>
-<script>var d = 587.3295;</script>
 <p>To define a scale, we would like to pick a set of notes within an octave so that the intervals between the notes are consonant. We can generate such scales using perfect fifths, after Pythagoras. Pick an arbitrary frequency as a starting point (the &ldquo;tonic&rdquo;), and then go up in pitch repeatedly by fifths. The first few notes in the series have the following frequency ratios relative to the tonic:</p>
 <table>
 <thead>
@@ -34,7 +33,7 @@
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td><button title="Play notes" onclick="playRatios([1, 3/2, 9/4], d)">Play ▶</button></td>
+<td><button title="Play notes" onclick="playRatios([1, 3/2, 9/4], note.D)">Play ▶</button></td>
 </tr>
 </tbody>
 </table>
@@ -95,8 +94,8 @@
 <tr>
 <td></td>
 <td style="text-align: right;"></td>
-<td><button title="Play notes" onclick="playRatios([8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8], d)">Play ▶</button></td>
-<td><button title="Play notes" onclick="playRatios([32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16], d)">Play  ▶</button></td>
+<td><button title="Play notes" onclick="playRatios([8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8], note.D)">Play ▶</button></td>
+<td><button title="Play notes" onclick="playRatios([32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16], note.D)">Play  ▶</button></td>
 </tr>
 </tbody>
 </table>
@@ -152,7 +151,7 @@
 </tr>
 <tr>
 <td></td>
-<td><button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], d)">Play ▶</button></td>
+<td><button title="Play notes" onclick="playRatios([1, 9/8, 32/27, 4/3, 3/2, 27/16, 16/9, 2], note.D)">Play ▶</button></td>
 <td></td>
 </tr>
 </tbody>
