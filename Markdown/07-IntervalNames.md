@@ -59,6 +59,10 @@ Any interval can be augmented by a half step, or diminished by a half step. An a
 
 ![Augmented and diminished intervals](https://musictheory.pugetsound.edu/mt21c/images/unit1/interval-quality-continuum.svg)
 
+# Inversion
+
+
+
 ## Related articles
 
 * Previous: [Major and minor scales](06-MajorMinorScales.html)

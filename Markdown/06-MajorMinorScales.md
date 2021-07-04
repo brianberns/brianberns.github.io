@@ -40,7 +40,7 @@ Consider the D major scale. We could write it using either sharps or flats (or e
 | D | E | F&sharp; | G | A | B | C&sharp; | D |
 | D | E | G&flat;  | G | A | B | D&flat;  | D |
 
-The first is preferred over the second because each of the note names appears once. The second is harder to read because it contains both G&flat; and G, and D&flat; and D.
+The first is preferred over the second because each of the note names appears exactly once. The second is harder to read because it contains both G&flat; and G, and D&flat; and D. All diatonic scales have this property: they can be written using all seven note names in sequence, with either sharps or flats (but not both) on a subset of the notes.
 
 ## Relative scales
 
