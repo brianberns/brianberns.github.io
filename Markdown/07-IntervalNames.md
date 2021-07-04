@@ -51,6 +51,8 @@ Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same i
 
 The minor version of an interval is always a half step shorter than the major version.
 
+Interval names extend beyond an octave as well. For example, a ninth is an octave plus a second.
+
 ## References
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Interval_(music)#Number)

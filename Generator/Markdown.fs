@@ -79,7 +79,7 @@ module Markdown =
     let generate (htmlDir : DirectoryInfo) (mdFile : FileInfo) =
 
             // parse markdown source
-        let md = readFile mdFile.FullName
+        let md = safeIo readFile mdFile.FullName
         let doc = Markdown.Parse(md, pipeline)
 
             // extract yaml
