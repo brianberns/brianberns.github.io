@@ -34,24 +34,27 @@ The most consonant intervals within an octave are said to be "perfect" intervals
 | 6 | A       | A&flat; |
 | 7 | B       | B&flat; |
 
-Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same in both scales (as are the unison and octave, of course). The other intervals have major and minor versions:
+Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same in both scales (as are the unison and octave, of course). The other intervals have major and minor versions.
 
-* Second
-  * Major second: C-D
-  * Minor second[^1]: C-C&sharp;
-* Third
-  * Major third: C-E
-  * Minor third: C-E&flat;
-* Sixth
-  * Major sixth: C-A
-  * Minor sixth: C-A&flat;
-* Seventh
-  * Major seventh: C-B
-  * Minor seventh: C-B&flat;
+| Half steps | Interval         | Example      |
+| ---------- | --------         | -------      |
+| 0          | Perfect unison   | C - C        |
+| 1          | Minor second[^1] | C - C&sharp; |
+| 2          | Major second     | C - D        |
+| 3          | Minor third      | C - E&flat;  |
+| 4          | Major third      | C - E        |
+| 5          | Perfect fourth   | C - F        |
+| 6          | Augmented fourth<br />Diminished fifth | C - F&sharp;<br />C - G&flat; |
+| 7          | Perfect fifth    | C - G        |
+| 8          | Minor sixth      | C - A&flat;  |
+| 9          | Major sixth      | C - A        |
+| 10         | Minor seventh    | C - B&flat;  |
+| 11         | Major seventh    | C - B        |
+| 12         | Perfect octave   | C - C        |
 
 The minor version of an interval is always a half step smaller than the major version.
 
-Interval names extend beyond an octave as well. These are called "compound" intervals. For example, a ninth is an octave plus a second, and a (perfect) eleventh is an octave plus a fourth.
+Intervals within an octave are called "simple", and intervals that extend beyond an octave are called "compound". For example, a ninth is an octave plus a second, and a (perfect) eleventh is an octave plus a fourth.
 
 ## Augmented and diminished intervals
 
@@ -59,9 +62,17 @@ Any interval can be augmented by a half step, or diminished by a half step. An a
 
 ![Augmented and diminished intervals](https://musictheory.pugetsound.edu/mt21c/images/unit1/interval-quality-continuum.svg)
 
-# Inversion
+## Inversion
 
+A simple interval can be inverted by raising the lower note by an octave, so that it's higher than the other note (or by lowering the higher note by an octave so that it's lower than the other note. For example, a minor sixth inverts to a major third.
 
+The following patterns apply to all such inversions:
+
+* The number of half steps in an interval and its inversion sum to twelve. E.g. A third and a sixth: 8 + 4 = 12.
+* The numeric values of an interval and its inversion sum to nine. E.g. A third and a sixth: 3 + 6 = 9.
+* A major interval always inverts to a minor interval, and vice versa.
+* A perfect interval always inverts to another perfect interval. E.g. The inversion of a perfect fifth is a perfect fourth.
+* An augmented interval always inverts to a diminished interval, and vice versa.
 
 ## Related articles
 
