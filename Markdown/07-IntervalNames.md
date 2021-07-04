@@ -54,7 +54,7 @@ Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same i
 
 The minor version of an interval is always a half step smaller than the major version.
 
-Intervals within an octave are called "simple", and intervals that extend beyond an octave are called "compound". For example, a ninth is an octave plus a second, and a (perfect) eleventh is an octave plus a fourth.
+Intervals within an octave are called "simple", and intervals beyond an octave are called "compound". For example, a ninth is an octave plus a second, and a (perfect) eleventh is an octave plus a fourth.
 
 ## Augmented and diminished intervals
 
