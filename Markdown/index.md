@@ -15,3 +15,4 @@ Brian Berns
   * [Circle of fifths](04-CircleOfFifths.html)
   * [Equal temperament](05-EqualTemperament.html)
   * [Major and minor scales](06-MajorMinorScales.html)
+  * [Interval names](07-IntervalNames.html)
