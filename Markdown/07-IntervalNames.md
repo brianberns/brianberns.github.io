@@ -7,7 +7,7 @@ title: Music theory - Interval names
 
 *July 2021*
 
-We are finally in a position to explain the names of intervals that we've been using.[^1]
+We are finally in a position to explain the names of intervals that we've been using. (This gets complicated quickly, so the explanation will be somewhat simplified.)
 
 ## Number
 
@@ -34,11 +34,22 @@ The most consonant intervals within an octave are said to be "perfect" intervals
 | 6 | A       | A&flat; |
 | 7 | B       | B&flat; |
 
-Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same in both scales. The other intervals[^2] have major and minor versions:
+Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same in both scales (as are the unison and octave, of course). The other intervals have major and minor versions:
 
+* Second
+  * Major second: C-D
+  * Minor second[^1]: C-C&sharp;
 * Third
   * Major third: C-E
   * Minor third: C-E&flat;
+* Sixth
+  * Major sixth: C-A
+  * Minor sixth: C-A&flat;
+* Seventh
+  * Major seventh: C-B
+  * Minor seventh: C-B&flat;
+
+The minor version of an interval is always a half step shorter than the major version.
 
 ## References
 
@@ -48,4 +59,4 @@ Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same i
 
 * Previous: [Major and minor scales](06-MajorMinorScales.html)
 
-[^1]: This gets complex quickly, so the explanation will be somewhat simplified.
+[^1]: The second is a dissonant interval, so even though second note is always the same in parallel scales (because they both start with a whole step), there are still major and minor versions of the interval.
