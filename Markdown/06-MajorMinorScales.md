@@ -49,21 +49,21 @@ The first is preferred over the second because each of the note names appears on
 Major and minor scales overlap:
 
 <pre>
-|    major    |    major    |    major    |
-1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6
- W W h W W W h W W h W W W h W W h W W W h W W h W W
-3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1
-          |    minor    |    minor    |    minor    |
+<span style="background-color:lightyellow">|    major    |    major    |    major    |          
+1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6</span>
+ W W h W W W h W W h W W W h W W h W W W h W W h W W 
+<span style="background-color:lightyellow">3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1
+          |    minor    |    minor    |    minor    |</span>
 </pre>
 
 So we can pick up a minor scale starting with the sixth note of a major scale, and we can pick up a major scale starting with the third note a minor scale. Such scales are called "relative". For example, A minor is the relative minor of C major, and C major is the relative major of A minor:
 
 <pre>
-|   C major   |   C major   |   C major   |
-C D E F G A B C D E F G A B C D E F G A B C D E F G A
- W W h W W W h W W h W W W h W W h W W W h W W h W W
-C D E F G A B C D E F G A B C D E F G A B C D E F G A
-          |   A minor   |   A minor   |   A minor   |
+<span style="background-color:lightyellow">|   C major   |   C major   |   C major   |
+C D E F G A B C D E F G A B C D E F G A B C D E F G A</span>
+ W W h W W W h W W h W W W h W W h W W W h W W h W W 
+<span style="background-color:lightyellow">C D E F G A B C D E F G A B C D E F G A B C D E F G A
+          |   A minor   |   A minor   |   A minor   |</span>
 </pre>
 
 
