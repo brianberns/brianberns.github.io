@@ -33,6 +33,17 @@ The name of a scale is determined by its first note, so the major scale that sta
 | A&sharp;/B&flat; | <button onclick="playMajorScale(note.Asharp)">&#9654;</button> | <button onclick="playMinorScale(note.Asharp)">&#9654;</button> |
 | B                | <button onclick="playMajorScale(note.B)">&#9654;</button> | <button onclick="playMinorScale(note.B)">&#9654;</button> |
 
+## Sharps vs. flats
+
+Consider the D major scale. We could write it using either sharps or flats (or even a combination of both):
+
+| 1 | 2 | 3        | 4 | 5 | 6 | 7        | 8 |
+| - | - | -------- | - | - | - | -------- | - |
+| D | E | F&sharp; | G | A | B | C&sharp; | D |
+| D | E | G&flat;  | G | A | B | D&flat;  | D |
+
+The first is preferred over the second because each of the note names appears once. The second is harder to read because it contains both G&flat; and G, and D&flat; and D.
+
 ## Relative scales
 
 Major and minor scales overlap:
