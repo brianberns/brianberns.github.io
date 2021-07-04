@@ -49,16 +49,18 @@ Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same i
   * Major seventh: C-B
   * Minor seventh: C-B&flat;
 
-The minor version of an interval is always a half step shorter than the major version.
+The minor version of an interval is always a half step smaller than the major version.
 
-Interval names extend beyond an octave as well. For example, a ninth is an octave plus a second.
+Interval names extend beyond an octave as well. These are called "compound" intervals. For example, a ninth is an octave plus a second, and a (perfect) eleventh is an octave plus a fourth.
 
-## References
+## Augmented and diminished intervals
 
-* [Wikipedia](https://en.wikipedia.org/wiki/Interval_(music)#Number)
+Any interval can be augmented by a half step, or diminished by a half step. An augmented perfect or major interval is called an augmented interval (e.g. an augmented fourth is a half step larger than a perfect fourth). A diminished perfect or minor interval is called a diminished interval (e.g. a diminished third is a half step smaller than a minor third).
+
+![Augmented and diminished intervals](https://musictheory.pugetsound.edu/mt21c/images/unit1/interval-quality-continuum.svg)
 
 ## Related articles
 
 * Previous: [Major and minor scales](06-MajorMinorScales.html)
 
-[^1]: The second is a dissonant interval, so even though second note is always the same in parallel scales (because they both start with a whole step), there are still major and minor versions of the interval.
+[^1]: The second is a dissonant interval with major and minor versions, even though the second notes of parallel scales are always the same (because both scales start with a whole step).
