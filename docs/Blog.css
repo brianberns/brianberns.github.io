@@ -30,3 +30,9 @@ th {
 table {
 	border-collapse: collapse;
 }
+
+pre {
+	background-color: whitesmoke;
+	padding: 10px;
+	display: inline-block; /* https://stackoverflow.com/questions/7132371/can-i-adjust-the-width-of-a-pre-area-to-fit-the-text/49680317 */
+}
