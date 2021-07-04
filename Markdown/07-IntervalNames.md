@@ -64,7 +64,7 @@ Any interval can be augmented by a half step, or diminished by a half step. An a
 
 ## Inversion
 
-A simple interval can be inverted by raising the lower note by an octave, so that it's higher than the other note (or by lowering the higher note by an octave so that it's lower than the other note. For example, a minor sixth inverts to a major third.
+A simple interval can be inverted by raising the lower note by an octave, or by lowering the higher note by an octave. For example, a minor sixth inverts to a major third.
 
 The following patterns apply to all such inversions:
 
