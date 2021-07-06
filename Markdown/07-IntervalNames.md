@@ -64,7 +64,7 @@ Any interval can be augmented by a half step, or diminished by a half step. An a
 
 ## Inversion
 
-A simple interval can be inverted by raising the lower note an octave, or by lowering the higher note an octave. For example, a minor sixth <button onclick="playHalfSteps([0, 8], note.C)">&#9654;</button> inverts to a major third <button onclick="playHalfSteps([8, 12], note.C)">&#9654;</button>.
+A simple interval can be inverted by raising the lower note an octave, so it becomes the higher note. For example, a minor sixth <button onclick="playHalfSteps([0, 8], note.C)">&#9654;</button> inverts to a major third <button onclick="playHalfSteps([8, 12], note.C)">&#9654;</button>.
 
 The following patterns apply to all such inversions:
 
