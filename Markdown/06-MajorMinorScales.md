@@ -31,6 +31,8 @@ The name of a scale is determined by its first note, so the major scale that sta
 | A&sharp;/B&flat; | <button onclick="playMajorScale(note.Asharp)">&#9654;</button> | <button onclick="playMinorScale(note.Asharp)">&#9654;</button> |
 | B                | <button onclick="playMajorScale(note.B)">&#9654;</button> | <button onclick="playMinorScale(note.B)">&#9654;</button> |
 
+A piece of music primarily written using the notes of a particular diatonic scale is said to be in the "key" of the scale's name &ndash; for example, in the key of C major.
+
 ## Sharps vs. flats
 
 Consider the D major scale. We could write it using either sharps or flats (or even a combination of both):
@@ -40,7 +42,7 @@ Consider the D major scale. We could write it using either sharps or flats (or e
 | D | E | F&sharp; | G | A | B | C&sharp; | D |
 | D | E | G&flat;  | G | A | B | D&flat;  | D |
 
-The first is preferred over the second because each of the note names appears exactly once. The second is harder to read because it contains both G&flat; and G, and D&flat; and D. All diatonic scales have this property: they can be written using all seven note names in sequence, with either sharps or flats (but not both) on a subset of the notes.
+The first is preferred over the second because each of the note names appears exactly once. The second is harder to read because it contains both G&flat; and G, and D&flat; and D. All diatonic scales have this property: they can be written using all seven note names in sequence, with either sharps or flats (but not both) on a subset of the notes. (This set of sharps or flats is called the scale's "key signature").
 
 ## Relative scales
 
@@ -69,4 +71,4 @@ C D E F G A B C D E F G A B C D E F G A B C D E F G A</span>
 * Previous: [Equal temperament](05-EqualTemperament.html)
 * Next: [Interval names](07-IntervalNames.html)
 
-[^1]: Technically, these are actually called "natural" major and minor scales. There are other kinds of major and minor scales as well.
+[^1]: Technically, this shows only the "natural" minor scale. There are also variations of this scale called "harmonic" and "melodic" minor scales.
