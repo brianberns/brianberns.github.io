@@ -36,21 +36,21 @@ The most consonant intervals within an octave are said to be "perfect" intervals
 
 Relative to the tonic, the fourth (C-F) and fifth (C-G) intervals are the same in both scales (as are the unison and octave, of course). The other intervals have major and minor versions.
 
-| Half steps | Interval         | Example      |
-| ---------- | --------         | -------      |
-| 0          | Perfect unison   | C - C        |
-| 1          | Minor second[^1] | C - C&sharp; |
-| 2          | Major second     | C - D        |
-| 3          | Minor third      | C - E&flat;  |
-| 4          | Major third      | C - E        |
-| 5          | Perfect fourth   | C - F        |
-| 6          | Augmented fourth<br />Diminished fifth | C - F&sharp;<br />C - G&flat; |
-| 7          | Perfect fifth    | C - G        |
-| 8          | Minor sixth      | C - A&flat;  |
-| 9          | Major sixth      | C - A        |
-| 10         | Minor seventh    | C - B&flat;  |
-| 11         | Major seventh    | C - B        |
-| 12         | Perfect octave   | C - C        |
+| Half steps | Interval         | Example      | Play |
+| ---------- | --------         | -------      | ---- |
+| 0          | Perfect unison   | C - C        | <button onclick="playHalfSteps([0, 0], note.C)">&#9654;</button> |
+| 1          | Minor second[^1] | C - C&sharp; | <button onclick="playHalfSteps([0, 1], note.C)">&#9654;</button> |
+| 2          | Major second     | C - D        | <button onclick="playHalfSteps([0, 2], note.C)">&#9654;</button> |
+| 3          | Minor third      | C - E&flat;  | <button onclick="playHalfSteps([0, 3], note.C)">&#9654;</button> |
+| 4          | Major third      | C - E        | <button onclick="playHalfSteps([0, 4], note.C)">&#9654;</button> |
+| 5          | Perfect fourth   | C - F        | <button onclick="playHalfSteps([0, 5], note.C)">&#9654;</button> |
+| 6          | Augmented fourth<br />Diminished fifth | C - F&sharp;<br />C - G&flat; | <button onclick="playHalfSteps([0, 6], note.C)">&#9654;</button> |
+| 7          | Perfect fifth    | C - G        | <button onclick="playHalfSteps([0, 7], note.C)">&#9654;</button> |
+| 8          | Minor sixth      | C - A&flat;  | <button onclick="playHalfSteps([0, 8], note.C)">&#9654;</button> |
+| 9          | Major sixth      | C - A        | <button onclick="playHalfSteps([0, 9], note.C)">&#9654;</button> |
+| 10         | Minor seventh    | C - B&flat;  | <button onclick="playHalfSteps([0, 10], note.C)">&#9654;</button> |
+| 11         | Major seventh    | C - B        | <button onclick="playHalfSteps([0, 11], note.C)">&#9654;</button> |
+| 12         | Perfect octave   | C - C        | <button onclick="playHalfSteps([0, 12], note.C)">&#9654;</button> |
 
 The minor version of an interval is always a half step smaller than the major version.
 

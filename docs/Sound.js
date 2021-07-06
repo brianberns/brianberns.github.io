@@ -41,30 +41,35 @@ function playRatios(ratios, freq) {
             playFreq(freq * ratio, ctx.currentTime + index/1.5));
 }
 
+function playHalfSteps(halfSteps, freq) {
+    let ratios = halfSteps.map(n => 2 ** (n / 12));
+    playRatios(ratios, freq);
+}
+
 function playMajorScale(freq) {
     let ratios = [
-        2 ** (0 / 12),
-        2 ** (2 / 12),    // W
-        2 ** (4 / 12),    // W
-        2 ** (5 / 12),    // h
-        2 ** (7 / 12),    // W
-        2 ** (9 / 12),    // W
-        2 ** (11 / 12),   // W
-        2 ** (12 / 12),   // h
+        0,
+        2,    // W
+        4,    // W
+        5,    // h
+        7,    // W
+        9,    // W
+        11,   // W
+        12    // h
     ];
     playRatios(ratios, freq);
 }
 
 function playMinorScale(freq) {
     let ratios = [
-        2 ** (0 / 12),
-        2 ** (2 / 12),    // W
-        2 ** (3 / 12),    // h
-        2 ** (5 / 12),    // W
-        2 ** (7 / 12),    // W
-        2 ** (8 / 12),    // h
-        2 ** (10 / 12),   // W
-        2 ** (12 / 12),   // W
+        0,
+        2,    // W
+        3,    // h
+        5,    // W
+        7,    // W
+        8,    // h
+        10,   // W
+        12    // W
     ];
     playRatios(ratios, freq);
 }
