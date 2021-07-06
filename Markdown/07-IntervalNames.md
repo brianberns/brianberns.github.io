@@ -68,10 +68,13 @@ A simple interval can be inverted by raising the lower note an octave, or by low
 
 The following patterns apply to all such inversions:
 
-* The number of half steps in an interval and its inversion sum to twelve. E.g. A third and a sixth: 8 + 4 = 12.
-* The numeric values of an interval and its inversion sum to nine. E.g. A third and a sixth: 3 + 6 = 9.
+* The number of half steps in an interval and its inversion sum to twelve.
+  * E.g. A major third and a minor sixth: 8 + 4 = 12.
+* The numeric values of an interval and its inversion sum to nine.
+  * E.g. A major third and a minor sixth: 3 + 6 = 9.
 * A major interval always inverts to a minor interval, and vice versa.
-* A perfect interval always inverts to another perfect interval. E.g. The inversion of a perfect fifth <button onclick="playHalfSteps([0, 7], note.C)">&#9654;</button> is a perfect fourth <button onclick="playHalfSteps([7, 12], note.C)">&#9654;</button>, and vice versa.
+* A perfect interval always inverts to another perfect interval.
+  * E.g. The inversion of a perfect fifth <button onclick="playHalfSteps([0, 7], note.C)">&#9654;</button> is a perfect fourth <button onclick="playHalfSteps([7, 12], note.C)">&#9654;</button>, and vice versa.
 * An augmented interval always inverts to a diminished interval, and vice versa.
 
 ## Related articles
