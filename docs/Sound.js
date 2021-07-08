@@ -57,7 +57,7 @@ function playMajorScale(freq) {
         11,   // W
         12    // h
     ];
-    playRatios(ratios, freq);
+    playHalfSteps(ratios, freq);
 }
 
 function playMinorScale(freq) {
@@ -71,5 +71,5 @@ function playMinorScale(freq) {
         10,   // W
         12    // W
     ];
-    playRatios(ratios, freq);
+    playHalfSteps(ratios, freq);
 }
