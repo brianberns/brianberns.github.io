@@ -5,7 +5,7 @@ title: Blog index
 
 Brian Berns
 
-## Notes on music theory
+## Music theory
 
 * June 2021
   * [Sine waves](01-SineWaves.html)
