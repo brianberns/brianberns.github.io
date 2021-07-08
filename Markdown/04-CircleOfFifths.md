@@ -33,7 +33,7 @@ The notes we have at this point are:
 | G&sharp; |  6 | (3&frasl;2)<sup>6</sup> = 729&frasl;64  | 729&frasl;512  |
 |          |    | <button onclick="playRatios([64/729, 32/243, 16/81, 8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8, 81/16, 243/32, 729/64], note.D)">Play &#9654;</button> | <button onclick="playRatios([1024/729, 256/243, 128/81, 32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16, 81/64, 243/128, 729/512], note.D)">Play  &#9654;</button> |
 
-In this Pythagorean tuning, A&flat; and G&sharp; are slightly different notes, making them very dissonant when played together <button onclick="playRatios([1024/729, 729/512], note.D)">&#9654;</button>. Ideally, we would like them to align, creating an exact "circle of fifths" &ndash; will look at how to do that soon. For now, we are left with twelve usable notes in a "chromatic" scale:
+In this Pythagorean tuning, A&flat; and G&sharp; are slightly different notes, making them very dissonant when played together <button onclick="playRatios([1024/729, 729/512], note.D)">&#9654;</button>. Ideally, we would like them to align, creating an exact "circle of fifths" &ndash; will look at how to do that soon. For now, we are left with twelve usable notes in a "chromatic" scale (in order by frequency):
 
 | Name     | Ratio to tonic               | Ratio to previous note        |
 | -------- | ---------------------------- | ----------------------------: |
