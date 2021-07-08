@@ -11,7 +11,7 @@ Now that we've decided to represent basic musical sounds as [pure sine waves](Si
 
 ## Unison
 
-The simplest interval is formed by two notes that have the same frequency, although perhaps not the same phase or amplitude. When we add two sine waves together in this way, we are guaranteed to get [another sine wave of the same frequency](https://www.desmos.com/calculator/unwtutu7bl). So, in a sense, unison (also called a "prime" interval) is still just a single note.
+The simplest interval is formed by two notes that have the same frequency, although perhaps not the same phase or amplitude. When we add two sine waves together in unison, we are guaranteed to get [another sine wave of the same frequency](https://www.desmos.com/calculator/unwtutu7bl). So, in a sense, unison (also called a "prime" interval) is still just a single note.
 
 If the two notes are in phase, we get a louder note, and if they are out of phase, they cancel each other out and we get a quieter note. (This is the basis for noise-canceling headphones.)
 
