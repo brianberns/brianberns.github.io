@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Music theory - Intervals</title>
+	<link rel="stylesheet" type="text/css" href="Blog.css" />
+	<meta name="google-site-verification" content="pRmKNE2_uJx_A_IVFRATRFdLIXupXXPKKPvvrFj9FL8" />
+</head>
+<body>
+<a class="undecorated" href=".">Home</a>
+<script src="Sound.js"></script>
+<h1 id="music-theory-intervals">Music theory: Intervals</h1>
+<p><em>June 2021</em></p>
+<p>Now that we've decided to represent basic musical sounds as <a href="SineWaves.html">pure sine waves</a>, we can talk about the intervals between two such sounds. Let's just call these basic sounds &ldquo;notes&rdquo; for simplicity.</p>
+<h2 id="unison">Unison</h2>
+<p>The simplest interval is formed by two notes that have the same frequency, although perhaps not the same phase or amplitude. When we add two sine waves together in unison, we are guaranteed to get <a href="https://www.desmos.com/calculator/unwtutu7bl">another sine wave of the same frequency</a>. So, in a sense, unison (also called a &ldquo;prime&rdquo; interval) is still just a single note.</p>
+<p>If the two notes are in phase, we get a louder note, and if they are out of phase, they cancel each other out and we get a quieter note. (This is the basis for noise-canceling headphones.)</p>
+<h2 id="octave">Octave</h2>
+<p>If one note is vibrating twice as fast as the other (i.e. their frequencies are in a 2:1 ratio) we have an octave <button onclick="playRatios([1, 2], 440)">▶</button>. Such notes sound similar to humans; they seem to &ldquo;rhyme&rdquo; in a way.</p>
+<p>The waveform of an octave has alternating tall and short peaks, but <a href="https://www.desmos.com/calculator/7idxde6tyo">its exact shape of depends on the phase relationship of the two notes</a>. Interestingly, all these different waveforms sound the same to humans, because our ears are <a href="https://ptolemy.berkeley.edu/eecs20/week8/phase.html">insensitive to phase differences</a>. (Presumably because we are performing a Fourier transform and discarding the phase information.)</p>
+<h2 id="consonance">Consonance</h2>
+<p>In general, intervals with simple frequency ratios tend to sound pleasant, or &ldquo;consonant&rdquo;, regardless of the phase relationship of the two notes. These simple ratios avoid the <a href="https://www.phys.uconn.edu/%7Egibson/Notes/Section5_5/Sec5_5.htm">unpleasant &ldquo;beating&rdquo; effect</a> that occurs when the ratio isn't as simple (e.g. 11:10 <button onclick="playRatios([1, 11/10], 440)">▶</button>).</p>
+<p>The next simplest ratio after 2:1 is 3:2, which is called a &ldquo;perfect fifth&rdquo; <button onclick="playRatios([1, 3/2], 440)">▶</button>. We can continue in this way to build a list of consonant intervals:</p>
+<table>
+<thead>
+<tr>
+<th>Ratio</th>
+<th>Name</th>
+<th>Play</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1:1</td>
+<td>Unison/Prime</td>
+<td><button onclick="playRatios([1, 1], 440)">▶</button></td>
+</tr>
+<tr>
+<td>2:1</td>
+<td>Octave</td>
+<td><button onclick="playRatios([1, 2], 440)">▶</button></td>
+</tr>
+<tr>
+<td>3:2</td>
+<td>Perfect fifth</td>
+<td><button onclick="playRatios([1, 3/2], 440)">▶</button></td>
+</tr>
+<tr>
+<td>4:3</td>
+<td>Perfect fourth</td>
+<td><button onclick="playRatios([1, 4/3], 440)">▶</button></td>
+</tr>
+<tr>
+<td>5:3</td>
+<td>Major sixth</td>
+<td><button onclick="playRatios([1, 5/3], 440)">▶</button></td>
+</tr>
+<tr>
+<td>5:4</td>
+<td>Major third</td>
+<td><button onclick="playRatios([1, 5/4], 440)">▶</button></td>
+</tr>
+<tr>
+<td>6:5</td>
+<td>Minor third</td>
+<td><button onclick="playRatios([1, 6/5], 440)">▶</button></td>
+</tr>
+<tr>
+<td>etc.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Clearly, we need a way to organize all these intervals (and explain their confusing names). We'll start discussing that soon.</p>
+<h2 id="stacking">Stacking</h2>
+<p>When the frequency ratio of an interval is greater than 2:1, it can thought of as a &ldquo;stack&rdquo; of simpler intervals. For example, the 3:1 ratio <button onclick="playRatios([1, 3], 440)">▶</button> is called a perfect twelfth, but is equivalent to an octave plus a fifth <button onclick="playRatios([1, 2, 3], 440)">▶</button>. Be careful, though: We use the word &ldquo;plus&rdquo; here because intervals are logarithmic. We actually have to multiply the ratios together: 3⁄1 = 2⁄1 × 3⁄2.</p>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li>Previous: <a href="01-SineWaves.html">Sine waves</a></li>
+<li>Next: <a href="03-PythagoreanScales.html">Pythagorean scales</a></li>
+</ul>
+
+</body>
+</html>

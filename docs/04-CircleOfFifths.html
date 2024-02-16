@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Music theory - Circle of fifths</title>
+	<link rel="stylesheet" type="text/css" href="Blog.css" />
+	<meta name="google-site-verification" content="pRmKNE2_uJx_A_IVFRATRFdLIXupXXPKKPvvrFj9FL8" />
+</head>
+<body>
+<a class="undecorated" href=".">Home</a>
+<script src="Sound.js"></script>
+<h1 id="music-theory-circle-of-fifths">Music theory: Circle of fifths</h1>
+<p><em>July 2021</em></p>
+<p>We've seen that we can use a series of perfect fifths to generate a diatonic scale. We can continue the process to generate more than just seven notes, but how many do we need?</p>
+<p>Since each pair of adjancent notes is in the ratio 3:2, after six steps in each direction we have an interval of (3⁄2)<sup>12</sup>, which is almost, but not quite, equal to seven octaves:</p>
+<ul>
+<li>Twelve perfect fifths = (3⁄2)<sup>12</sup> ≈ 129.74</li>
+<li>Seven octaves = 2<sup>7</sup> = 128</li>
+</ul>
+<p>The notes we have at this point are:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: right;"># of fifths</th>
+<th>Unnormalized ratio</th>
+<th>Normalized ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A♭</td>
+<td style="text-align: right;">-6</td>
+<td>(3⁄2)<sup>-6</sup> = 64⁄729</td>
+<td>1024⁄729</td>
+</tr>
+<tr>
+<td>E♭</td>
+<td style="text-align: right;">-5</td>
+<td>(3⁄2)<sup>-5</sup> = 32⁄243</td>
+<td>256⁄243</td>
+</tr>
+<tr>
+<td>B♭</td>
+<td style="text-align: right;">-4</td>
+<td>(3⁄2)<sup>-4</sup> = 16⁄81</td>
+<td>128⁄81</td>
+</tr>
+<tr>
+<td>F</td>
+<td style="text-align: right;">-3</td>
+<td>(3⁄2)<sup>-3</sup> = 8⁄27</td>
+<td>32⁄27</td>
+</tr>
+<tr>
+<td>C</td>
+<td style="text-align: right;">-2</td>
+<td>(3⁄2)<sup>-2</sup> = 4⁄9</td>
+<td>16⁄9</td>
+</tr>
+<tr>
+<td>G</td>
+<td style="text-align: right;">-1</td>
+<td>(3⁄2)<sup>-1</sup> = 2⁄3</td>
+<td>4⁄3</td>
+</tr>
+<tr>
+<td>D</td>
+<td style="text-align: right;">0</td>
+<td>(3⁄2)<sup>0</sup> = 1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>A</td>
+<td style="text-align: right;">1</td>
+<td>(3⁄2)<sup>1</sup> = 3⁄2</td>
+<td>3⁄2</td>
+</tr>
+<tr>
+<td>E</td>
+<td style="text-align: right;">2</td>
+<td>(3⁄2)<sup>2</sup> = 9⁄4</td>
+<td>9⁄8</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: right;">3</td>
+<td>(3⁄2)<sup>3</sup> = 27⁄8</td>
+<td>27⁄16</td>
+</tr>
+<tr>
+<td>F♯</td>
+<td style="text-align: right;">4</td>
+<td>(3⁄2)<sup>4</sup> = 81⁄16</td>
+<td>81⁄64</td>
+</tr>
+<tr>
+<td>C♯</td>
+<td style="text-align: right;">5</td>
+<td>(3⁄2)<sup>5</sup> = 243⁄32</td>
+<td>243⁄128</td>
+</tr>
+<tr>
+<td>G♯</td>
+<td style="text-align: right;">6</td>
+<td>(3⁄2)<sup>6</sup> = 729⁄64</td>
+<td>729⁄512</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;"></td>
+<td><button onclick="playRatios([64/729, 32/243, 16/81, 8/27, 4/9, 2/3, 1, 3/2, 9/4, 27/8, 81/16, 243/32, 729/64], note.D)">Play ▶</button></td>
+<td><button onclick="playRatios([1024/729, 256/243, 128/81, 32/27, 16/9, 4/3, 1, 3/2, 9/8, 27/16, 81/64, 243/128, 729/512], note.D)">Play  ▶</button></td>
+</tr>
+</tbody>
+</table>
+<p>In this Pythagorean tuning, A♭ and G♯ are slightly different notes, making them very dissonant when played together <button onclick="playRatios([1024/729, 729/512], note.D)">▶</button>. Ideally, we would like them to align, creating an exact &ldquo;circle of fifths&rdquo; – will look at how to do that soon. For now, we are left with twelve usable notes in a &ldquo;chromatic&rdquo; scale (in order by frequency):</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Ratio to tonic</th>
+<th style="text-align: right;">Ratio to previous note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>1 = 1.00</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>E♭</td>
+<td>256⁄243 ≈ 1.05</td>
+<td style="text-align: right;">1.05 / 1.00 ≈ 1.05</td>
+</tr>
+<tr>
+<td>E</td>
+<td>9⁄8 ≈ 1.13</td>
+<td style="text-align: right;">1.13 / 1.05 ≈ 1.08</td>
+</tr>
+<tr>
+<td>F</td>
+<td>32⁄27 ≈ 1.19</td>
+<td style="text-align: right;">1.19 / 1.13 ≈ 1.05</td>
+</tr>
+<tr>
+<td>F♯</td>
+<td>81⁄64 ≈ 1.27</td>
+<td style="text-align: right;">1.27 / 1.19 ≈ 1.07</td>
+</tr>
+<tr>
+<td>G</td>
+<td>4⁄3 ≈ 1.33</td>
+<td style="text-align: right;">1.33 / 1.27 ≈ 1.04</td>
+</tr>
+<tr>
+<td>A♭</td>
+<td>1024⁄729 ≈ 1.40</td>
+<td style="text-align: right;">1.40 / 1.33 ≈ 1.05</td>
+</tr>
+<tr>
+<td>A</td>
+<td>3⁄2 ≈ 1.50</td>
+<td style="text-align: right;">1.50 / 1.40 ≈ 1.07</td>
+</tr>
+<tr>
+<td>B♭</td>
+<td>128⁄81 ≈ 1.58</td>
+<td style="text-align: right;">1.58 / 1.50 ≈ 1.05</td>
+</tr>
+<tr>
+<td>B</td>
+<td>27⁄16 ≈ 1.69</td>
+<td style="text-align: right;">1.69 / 1.58 ≈ 1.07</td>
+</tr>
+<tr>
+<td>C</td>
+<td>16⁄9 ≈ 1.78</td>
+<td style="text-align: right;">1.78 / 1.69 ≈ 1.05</td>
+</tr>
+<tr>
+<td>C♯</td>
+<td>243⁄128 ≈ 1.90</td>
+<td style="text-align: right;">1.90 / 1.78 ≈ 1.07</td>
+</tr>
+<tr>
+<td>D</td>
+<td>2⁄1 = 2.00</td>
+<td style="text-align: right;">2.00 / 1.90 ≈ 1.05</td>
+</tr>
+<tr>
+<td></td>
+<td><button onclick="playRatios([1, 256/243, 9/8, 32/27, 81/64, 4/3, 1024/729, 3/2, 128/81, 27/16, 16/9, 243/128, 2], note.D)">Play ▶</button></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>The flats and sharps fill the gaps in our diatonic scale, so the interval formed by each adjancent pair of notes is now (roughly) a half step.</p>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li>Previous: <a href="03-PythagoreanScales.html">Pythagorean scales</a></li>
+<li>Next: <a href="05-EqualTemperament.html">Equal temperament</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Music theory - Major and minor scales</title>
+	<link rel="stylesheet" type="text/css" href="Blog.css" />
+	<meta name="google-site-verification" content="pRmKNE2_uJx_A_IVFRATRFdLIXupXXPKKPvvrFj9FL8" />
+</head>
+<body>
+<a class="undecorated" href=".">Home</a>
+<script src="Sound.js"></script>
+<h1 id="music-theory-major-and-minor-scales">Music theory: Major and minor scales</h1>
+<p><em>July 2021</em></p>
+<p>A diatonic scale has seven notes per octave, and the half steps (<code>h</code>) are separated from each other by alternating groups of two and three whole steps (<code>W</code>): <code>W W W h W W h W W W h W W h</code> ... . The starting point of the pattern determines whether the scale is &ldquo;major&rdquo; or &ldquo;minor&rdquo;:<a id="fnref:1" href="#fn:1" class="footnote-ref"><sup>1</sup></a></p>
+<ul>
+<li>Major: <code>W W h W W W h</code></li>
+<li>Minor: <code>W h W W h W W</code></li>
+</ul>
+<p>Major scales are often <a href="https://www.reddit.com/r/musictheory/comments/9wf9me/why_are_minor_keys_sad_and_major_keys_happy/">considered</a> &ldquo;happy&rdquo; and minor scales &ldquo;sad&rdquo;.</p>
+<p>The name of a scale is determined by its first note, so the major scale that starts with C is &ldquo;C major&rdquo;. This gives us 24 distinct scales:</p>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th style="text-align: center;">Major scale</th>
+<th style="text-align: center;">Minor scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.C)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.C)">▶</button></td>
+</tr>
+<tr>
+<td>C♯/D♭</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.Csharp)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.Csharp)">▶</button></td>
+</tr>
+<tr>
+<td>D</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.D)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.D)">▶</button></td>
+</tr>
+<tr>
+<td>D♯/E♭</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.Dsharp)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.Dsharp)">▶</button></td>
+</tr>
+<tr>
+<td>E</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.E)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.E)">▶</button></td>
+</tr>
+<tr>
+<td>F</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.F)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.F)">▶</button></td>
+</tr>
+<tr>
+<td>F♯/G♭</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.Fsharp)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.Fsharp)">▶</button></td>
+</tr>
+<tr>
+<td>G</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.G)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.G)">▶</button></td>
+</tr>
+<tr>
+<td>G♯/A♭</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.Gsharp)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.Gsharp)">▶</button></td>
+</tr>
+<tr>
+<td>A</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.A)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.A)">▶</button></td>
+</tr>
+<tr>
+<td>A♯/B♭</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.Asharp)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.Asharp)">▶</button></td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: center;"><button onclick="playMajorScale(note.B)">▶</button></td>
+<td style="text-align: center;"><button onclick="playMinorScale(note.B)">▶</button></td>
+</tr>
+</tbody>
+</table>
+<p>A piece of music primarily written using the notes of a particular diatonic scale is said to be in that scale's &ldquo;key&rdquo; – for example, in the key of C major.</p>
+<h2 id="sharps-vs.flats">Sharps vs. flats</h2>
+<p>Consider the D major scale. We could write it using either sharps or flats (or even a combination of both):</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>E</td>
+<td>F♯</td>
+<td>G</td>
+<td>A</td>
+<td>B</td>
+<td>C♯</td>
+<td>D</td>
+</tr>
+<tr>
+<td>D</td>
+<td>E</td>
+<td>G♭</td>
+<td>G</td>
+<td>A</td>
+<td>B</td>
+<td>D♭</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<p>The first is preferred over the second because each of the note names appears exactly once. The second is harder to read because it contains both G♭ and G, and D♭ and D. All diatonic scales have this property: they can be written using all seven note names in sequence, with either sharps or flats (but not both) on a subset of the notes. This set of sharps or flats is called the scale's &ldquo;key signature&rdquo;.</p>
+<h2 id="relative-scales">Relative scales</h2>
+<p>Major and minor scales overlap:</p>
+<pre>
+<span style="background-color:lightyellow">|    major    |    major    |    major    |          
+1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6</span>
+ W W h W W W h W W h W W W h W W h W W W h W W h W W 
+<span style="background-color:lightyellow">3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4 5 6 7 1
+          |    minor    |    minor    |    minor    |</span>
+</pre>
+<p>So we can pick up a minor scale starting with the sixth note of a major scale, and we can pick up a major scale starting with the third note a minor scale. Such scales are called &ldquo;relative&rdquo;. For example, A minor is the relative minor of C major, and C major is the relative major of A minor:</p>
+<pre>
+<span style="background-color:lightyellow">|   C major   |   C major   |   C major   |
+C D E F G A B C D E F G A B C D E F G A B C D E F G A</span>
+ W W h W W W h W W h W W W h W W h W W W h W W h W W 
+<span style="background-color:lightyellow">C D E F G A B C D E F G A B C D E F G A B C D E F G A
+          |   A minor   |   A minor   |   A minor   |</span>
+</pre>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li>Previous: <a href="05-EqualTemperament.html">Equal temperament</a></li>
+<li>Next: <a href="07-IntervalNames.html">Interval names</a></li>
+</ul>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Technically, this shows only the &ldquo;natural&rdquo; minor scale. There are also variations of this scale called &ldquo;harmonic&rdquo; and &ldquo;melodic&rdquo; minor scales.<a href="#fnref:1" class="footnote-back-ref">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+</body>
+</html>
