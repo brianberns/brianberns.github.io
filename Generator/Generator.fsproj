@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <WarnOn>3390;$(WarnOn)</WarnOn>
   </PropertyGroup>
 
@@ -17,10 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotLiquid" Version="2.1.457" />
-    <PackageReference Include="Markdig" Version="0.25.0" />
-    <PackageReference Include="Suave" Version="2.6.1" />
-    <PackageReference Include="YamlDotNet" Version="11.2.0" />
+    <PackageReference Include="DotLiquid" Version="2.3.18" />
+    <PackageReference Include="Markdig" Version="0.40.0" />
+    <PackageReference Include="Suave" Version="2.6.2" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 
 </Project>

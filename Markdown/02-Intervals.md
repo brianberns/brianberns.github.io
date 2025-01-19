@@ -7,7 +7,7 @@ title: Music theory - Intervals
 
 *June 2021*
 
-Now that we've decided to represent basic musical sounds as [pure sine waves](SineWaves.html), we can talk about the intervals between two such sounds. Let's just call these basic sounds "notes" for simplicity.
+Now that we've decided to represent basic musical sounds as [pure sine waves](01-SineWaves.html), we can talk about the intervals between two such sounds. Let's just call these basic sounds "notes" for simplicity.
 
 ## Unison
 
