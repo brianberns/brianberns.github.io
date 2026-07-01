@@ -56,7 +56,7 @@ Major and minor scales overlap:
           |    minor    |    minor    |    minor    |</span>
 </pre>
 
-So we can pick up a minor scale starting with the sixth note of a major scale, and we can pick up a major scale starting with the third note a minor scale. Such scales are called "relative". For example, A minor is the relative minor of C major, and C major is the relative major of A minor:
+So we can pick up a minor scale starting with the sixth note of a major scale, and we can pick up a major scale starting with the third note of a minor scale. Such scales are called "relative". For example, A minor is the relative minor of C major, and C major is the relative major of A minor:
 
 <pre>
 <span style="background-color:lightyellow">|   C major   |   C major   |   C major   |
